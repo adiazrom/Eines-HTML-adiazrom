@@ -5,8 +5,11 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "description": "",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache",
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +17,8 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "parcel": "latest"
+    "npm-run-all": "^4.1.5",
+    "parcel": "latest",
+    "rimraf": "^6.0.1"
   }
 }
