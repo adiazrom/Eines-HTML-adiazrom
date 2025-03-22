@@ -1,6 +1,4 @@
-/****************************
-Responsive footer section 
-*****************************/
+
     .footer {
         width: 100%;
         position: relative;
@@ -11,7 +9,6 @@ Responsive footer section
         text-align: center;
         margin-top: 4.5rem;
         display: flex;
-        //flex-direction: column;
         justify-content: space-between;
     }
 
@@ -104,7 +101,7 @@ Responsive footer section
 
 
 /*****************************
-Media query for medium devices
+Media query for medium and big devices
 *****************************/
 @media (min-width: 768px) {
         
