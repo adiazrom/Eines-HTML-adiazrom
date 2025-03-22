@@ -1,5 +1,9 @@
-@import "root.css";
-@import "typography.css";
-@import "header.css";
-@import "footer.css";
+@import "../css/root.css";
+@import "../css/typography.css";
+@import "../css/header.css";
+@import "../css/footer.css";
+@import "../css/main.css";
+
+
+
 
