@@ -293,13 +293,13 @@ Media query for medium and big devices
     }
     
     .featured-preview:first-child {
-        display: block; /* Show only the first slide */
+        display: block;
     }
     
     .img-featured {
         width: 100%;
-        height: 350px; // Set a fixed height for uniformity
-        overflow: hidden; // Prevents image overflow
+        height: 350px;
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -307,9 +307,9 @@ Media query for medium and big devices
     
     
     .img-featured img {
-        width: 100%; // Ensures the image fills the container
-        height: 100%; // Stretch to fit the height
-        object-fit: cover; // Crop to maintain aspect ratio
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         border-radius: 0.5rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
@@ -403,22 +403,22 @@ Media query for medium and big devices
         padding: 0.5rem;
         position: relative;
         width: 100%;
-        max-width: 25rem; /* Set a fixed width for cards */
+        max-width: 25rem;
     }
     
     .img-container {
         width: 100%;
-        height: 200px; /* Set a fixed height for uniformity */
-        overflow: hidden; /* Prevents image overflow */
+        height: 200px;
+        overflow: hidden; 
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     .img-container img {
-        width: 100%; /* Ensures the image fills the container */
-        height: 100%; /* Stretch to fit the height */
-        object-fit: cover; /* Crop to maintain aspect ratio */
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
         border-radius: 0.5rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
