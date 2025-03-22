@@ -1,8 +1,10 @@
 
 :root {
     --main-color: #D64000;
-    --light-color: #F9B44D;
-    --link-color: rgb(64, 195, 130);
+    --accent-color: #F9B44D;
+    --link-color: #C3E18E;
+    --light-color: #FFFFFF;
+    --dark-color: #270A02;
     --background-color: #FFFFFF;
     --low-opacity: rgba(255, 255, 255, 0.7);
   }
