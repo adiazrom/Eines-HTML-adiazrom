@@ -23,5 +23,13 @@
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.0",
     "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "@parcel/optimizer-htmlnano": "^2.14.1",
+    "html": "^1.0.0",
+    "husky": "^9.1.7",
+    "husky-init": "^8.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
   }
 }
