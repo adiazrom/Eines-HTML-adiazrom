@@ -5,7 +5,7 @@
     width: 100%;
     padding: 1rem 0;
     background-color: var(--accent-color);
-    position: relative;
+    position: static;
 }
 
 .header-logo {
@@ -15,7 +15,7 @@
 }
 
 .header-logo img {
-    height: 8rem;
+    height: 10rem;
     max-width: 100%;
 }
 
