@@ -3,17 +3,28 @@ console.log("Hello from script.js");
 let slideIndex = 1;
 
 document.addEventListener("DOMContentLoaded", function () {
-    showSlides(slideIndex);
+  console.log("DOM loaded");
 
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".top-nav");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".top-nav");
 
-    menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-    }
-    );
+  console.log(menuToggle);  // Check if the element is found
+  console.log(navMenu);     // Check if the element is found
 
+  if (menuToggle && navMenu) {
+      menuToggle.addEventListener("click", function () {
+          console.log("Menu button clicked!");
+          if (window.innerWidth < 768) {
+              navMenu.classList.toggle("active");
+              console.log("Menu toggled, active:", navMenu.classList.contains("active"));
+          }
+      });
+  } else {
+      console.log("Elements not found!");
+  }
 });
+
+
 
 
 // Next/previous controls
