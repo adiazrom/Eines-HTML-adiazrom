@@ -26,11 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("header.html")
+  // Use relative path that works for all pages
+  fetch("./header.html")  // This will work for both index.html and other pages
       .then(response => response.text())
       .then(data => document.getElementById("header").innerHTML = data);
 
-  fetch("footer.html")
+  fetch("./footer.html")  // This will work for both index.html and other pages
       .then(response => response.text())
       .then(data => document.getElementById("footer").innerHTML = data);
 });

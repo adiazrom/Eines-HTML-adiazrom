@@ -159,7 +159,7 @@ Media query for medium and big devices
         content: "|";
         margin-left: 1rem;
         margin-right: 1rem;
-        color:var(--light-color); /* Adjust separator color */
+        color:var(--light-color); /* Adjust separator color 
     }*/
 
     .social ul li:not(:last-child)::after {
