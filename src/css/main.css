@@ -284,6 +284,27 @@ section.recipes {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.links h2 {
+    margin-top: 2.5rem;
+    text-decoration: solid underline;
+    text-align: left;
+}
+
+.bibliography {
+  list-style-type: decimal;
+  padding-left: 2rem;
+}
+
+.bibliography li {
+  margin-bottom: 1rem;
+}
+
+.bibliography li p {
+  text-indent: -2rem;
+  margin-left: 2rem;
+}
+
+
 /****************************
 Media query for medium and big devices
 *****************************/
