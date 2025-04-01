@@ -125,14 +125,14 @@ Media query for medium and big devices
 
     .top-nav {
         display: flex;
-        /*position: static;*/
+        position: static;
         transform: none;
         justify-content: space-between;
         align-items: center;
         width: auto;
         background: transparent;
         box-shadow: none;
-        padding: 0;
+        padding-right: 3rem;
     }
 
     .top-nav ul {
@@ -148,4 +148,8 @@ Media query for medium and big devices
     .top-nav ul li a {
         padding: 0.5rem 1rem;
         display: inline-block;
+    }
+
+    .header-logo {
+        padding-left: 3rem;
     }
