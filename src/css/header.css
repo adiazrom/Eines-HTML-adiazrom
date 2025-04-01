@@ -55,6 +55,7 @@
     padding: 0.5rem 0;
     text-align: center;
     z-index: 1000;
+    
 }
 
 .top-nav.active {
@@ -69,6 +70,7 @@
 
 .top-nav ul li {
     margin: 0.5rem 0;
+    font-weight: bold;
 }
 
 .top-nav ul li a {
@@ -76,6 +78,7 @@
     color: var(--dark-color);
     display: block;
     transition: background 0.3s ease-in-out;
+    border-radius: 25rem;
 }
 
 .top-nav input[type=text] {
@@ -96,12 +99,17 @@
     cursor: pointer;
   }
   
-  .top-nav ul li a:hover {
+.top-nav ul li a:hover {
     background-color: var(--light-color);
 }
 
 .top-nav ul li a:active {
     background-color: var(--light-color);
+}
+
+.top-nav ul li a:focus {
+    background-color: var(--main-color);
+    color: light;
 }
 
 .top-nav .search-container button:hover {
