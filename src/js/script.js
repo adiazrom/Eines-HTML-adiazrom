@@ -78,11 +78,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   fetch(prefix + "header.html")
       .then(response => response.text())
-      .then(data => document.getElementById("header").innerHTML = data);
+      .then(data => document.getElementById("header").innerHTML = data)
+      .catch(error => console.log("Error loading header:", error));
 
   fetch(prefix + "footer.html")
       .then(response => response.text())
-      .then(data => document.getElementById("footer").innerHTML = data);
+      .then(data => document.getElementById("footer").innerHTML = data)
+      .catch(error => console.log("Error loading footer:", error));
 });
 
 
