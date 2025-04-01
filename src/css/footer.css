@@ -77,6 +77,7 @@
         margin: 0; /* Reset margins */
     }
 
+
     div.social ul li a {
         display: flex;
         width: 2rem;
@@ -84,6 +85,8 @@
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        padding-right: 1rem;
+        padding-left: 2rem;
     }
 
     div.social ul li a.instagram {
