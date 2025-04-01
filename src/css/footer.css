@@ -90,10 +90,6 @@
         background-image: url("../img/instagram.png");
     }
 
-    div.social ul li a.youtube {
-        background-image: url("../img/youtube.png");
-    }
-
     div.social li a:hover {
         opacity: 0.7;
     }
