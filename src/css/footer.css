@@ -32,11 +32,12 @@
 
     /*------Footer navigation------*/
     .footer-nav ul {
-        color: var(--light-color);
+        color: var(--dark-color);
         justify-content: center;
         list-style-type: none;
         margin: 0.7rem 0 0;
         padding: 0;
+        font-size: 0.8rem;
     }
 
     .footer-nav ul li {
