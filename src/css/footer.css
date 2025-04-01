@@ -45,6 +45,14 @@
         padding: 0;
     }
 
+    .footer-links-about li {
+        font-size: 0.8rem;
+    }
+
+    .footer-links-about li:nth-child(1) {
+        margin: 0 1rem;
+    }
+
     .footer-links-about li a {
         color: var(--dark-color);
         font-size: 0.8rem;
