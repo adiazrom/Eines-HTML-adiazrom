@@ -26,14 +26,14 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("featured-preview");
   let dots = document.getElementsByClassName("dot");
-  
+
   if (n > slides.length) {
-    slideIndex = 1
-}
-  
+    slideIndex = 1;
+  }
+
   if (n < 1) {
-    slideIndex = slides.length
-}
+    slideIndex = slides.length;
+  }
 
 
   for (i = 0; i < slides.length; i++) {
@@ -44,8 +44,8 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
 
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -54,36 +54,29 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".top-nav");
 
-  console.log(menuToggle);  // Check if the element is found
-  console.log(navMenu);     // Check if the element is found
-
+  // Ensure that the elements exist before adding event listeners
   if (menuToggle && navMenu) {
-      menuToggle.addEventListener("click", function () {
-          console.log("Menu button clicked!");
-          if (window.innerWidth < 768) {
-              navMenu.classList.toggle("active");
-              console.log("Menu toggled, active:", navMenu.classList.contains("active"));
-          }
-      });
-  } else {
-      console.log("Elements not found!");
+    menuToggle.addEventListener("click", function () {
+        if (window.innerWidth < 768) {
+            navMenu.classList.toggle("active");
+        }
+    });
   }
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get current path depth
   let depth = window.location.pathname.split("/").length - 2; // Adjust if needed
   let prefix = depth > 0 ? "../".repeat(depth) : "./";
 
-  fetch(prefix + "header.html")
-      .then(response => response.text())
-      .then(data => document.getElementById("header").innerHTML = data)
-      .catch(error => console.log("Error loading header:", error));
-
-  fetch(prefix + "footer.html")
-      .then(response => response.text())
-      .then(data => document.getElementById("footer").innerHTML = data)
-      .catch(error => console.log("Error loading footer:", error));
+  // Fetch the header and footer HTML files asynchronously
+  Promise.all([
+    fetch(prefix + "header.html").then(response => response.text()),
+    fetch(prefix + "footer.html").then(response => response.text())
+  ])
+  .then(([headerData, footerData]) => {
+    document.getElementById("header").innerHTML = headerData;
+    document.getElementById("footer").innerHTML = footerData;
+  })
+  .catch(error => console.log("Error loading header or footer:", error));
 });
-
