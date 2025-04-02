@@ -1,6 +1,4 @@
-console.log("Hello from script.js");
-
-import "../src/css/styles.css";
+import "../css/styles.css";
 
 let slideIndex = 1;
 
