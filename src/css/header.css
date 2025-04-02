@@ -122,6 +122,7 @@ Media query for medium and big devices
         background: transparent;
         box-shadow: none;
         padding-right: 3rem;
+        padding-left: 40rem;
     }
 
     .top-nav ul {
