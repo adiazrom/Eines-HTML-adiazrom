@@ -1,5 +1,8 @@
 console.log("Hello from script.js");
 
+import './styles.css';
+
+
 let slideIndex = 1;
 
 // Next/previous controls
