@@ -173,3 +173,4 @@ Media query for medium and big devices
     .social ul li:not(:last-child)::after {
         content: none;
     }
+}

@@ -1,9 +1,10 @@
+const { default: postcss } = require('postcss');
+
 /** @type {import('postcss-load-config').Config} */
-const config = {
-    plugins: [
-      require('autoprefixer'),
-      require('postcss-nested')
-    ]
-  }
-  
-  module.exports = config;
+module.exports = {
+  plugins: [
+    require('autoprefixer'),
+    require('postcss-nested'),
+    require('postcss-import')
+  ]
+};
