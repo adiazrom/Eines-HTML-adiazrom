@@ -99,29 +99,11 @@
     cursor: pointer;
   }
   
-.top-nav ul li a:hover {
+.top-nav ul li a:hover,
+.top-nav ul li a:active,
+.top-nav ul li a.active {
     background-color: var(--light-color);
 }
-
-.top-nav ul li a:active {
-    background-color: var(--light-color);
-}
-
-.top-nav ul li a:focus {
-    background-color: var(--main-color);
-    color: light;
-}
-
-.top-nav .search-container button:hover {
-    background: var(--accent-color);
-  }
-
-
-/*This should not show on mobile*/
-.top-nav ul li:not(:last-child)::after {
-    display: none;
-}
-
 
 /*****************************
 Media query for medium and big devices
