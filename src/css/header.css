@@ -100,8 +100,7 @@
   }
   
 .top-nav ul li a:hover,
-.top-nav ul li a:active,
-.top-nav ul li a.active {
+.top-nav ul li a:active {
     background-color: var(--light-color);
 }
 
