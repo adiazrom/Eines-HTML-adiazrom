@@ -37,19 +37,19 @@
     font-size: 2rem;
     color: var(--main-color);
     cursor: pointer;
-    position: absolute;
+    /*position: absolute;*/
     right: 1rem;
 }
 
 .top-nav {
-    display: flex;
-    position: absolute;
-    top: 100%;
-    left: 50%;
+    /*display: flex;*/
+    /*position: absolute;*/
+    /*top: 100%;*/
+    /*left: 50%;*/
     transform: translateX(-50%);
     width: max-content;
-    min-width: 200px;
-    background-color: var(--accent-color);
+    min-width: 10rem;
+    background-color: var(--light-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
     padding: 0.5rem 0;
