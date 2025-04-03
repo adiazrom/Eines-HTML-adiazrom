@@ -91,8 +91,6 @@
 
     div.icons ul li a {
         display: flex;
-        width: 2rem;
-        height: 2rem;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -168,13 +166,9 @@ Media query for medium and big devices
 
     div.icons ul li a {
         display: flex;
-        width: 2rem;
-        height: 2rem;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        padding-right: 1rem;
-        padding-left: 2rem;
     }
 
     div.icons ul li a.instagram {
