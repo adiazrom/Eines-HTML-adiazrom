@@ -7,20 +7,19 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".prev").addEventListener("click", () => plusSlides(-1));
+  document.querySelector(".next").addEventListener("click", () => plusSlides(1));
 
-function navigateSlides(event, direction) {
-  if (event.key === "ArrowLeft" && direction === -1) {
-      plusSlides(-1);
-  } else if (event.key === "ArrowRight" && direction === 1) {
-      plusSlides(1);
-  } else if (event.key === "Enter" || event.key === " ") {
-      plusSlides(direction);
-  }
-}
+  document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+          plusSlides(-1);
+      } else if (event.key === "ArrowRight") {
+          plusSlides(1);
+      }
+  });
+});
+
 
 
 function showSlides(n) {
