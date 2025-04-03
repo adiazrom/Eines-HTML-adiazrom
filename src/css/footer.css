@@ -102,10 +102,6 @@
         max-width: 100%;
     }
 
-    div.icons ul li a.instagram {
-        background-image: url("../img/instagram.png");
-    }
-
     div.icons li a:hover {
         opacity: 0.7;
     }
@@ -169,16 +165,11 @@ Media query for medium and big devices
         gap: 5rem;
     }
 
-
     div.icons ul li a {
         display: flex;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-    }
-
-    div.icons ul li a.instagram {
-        background-image: url("../img/instagram.png");
     }
 
     div.icons li a:hover {
