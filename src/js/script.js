@@ -54,15 +54,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".top-nav");
 
-  // Ensure that the elements exist before adding event listeners
+  // Ensure the elements exist before adding event listeners
   if (menuToggle && navMenu) {
     menuToggle.addEventListener("click", function () {
-        if (window.innerWidth < 768) { // Only toggle on mobile
-            navMenu.classList.toggle("active");
+        // Only toggle the menu on mobile screens
+        if (window.innerWidth < 768) {
+            navMenu.classList.toggle("active"); // Toggle the "active" class
         }
     });
   }
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get current path depth

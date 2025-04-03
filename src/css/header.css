@@ -15,8 +15,8 @@
 }
 
 .header-logo img {
-    height: 7rem;
-    width: 20rem;
+    height: 5rem;
+    width: auto;
     display: block;
     align-items: center;
     margin-left: 1rem;
@@ -38,7 +38,7 @@
     color: var(--main-color);
     cursor: pointer;
     /*position: absolute;*/
-    right: 1rem;
+    margin-right: 1rem;
 }
 
 .top-nav {

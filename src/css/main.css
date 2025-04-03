@@ -84,7 +84,7 @@ Card styles
 .featured-slideshow {
     width: 100%;
     max-width: 1000px;
-    height: 56vh;
+    height: auto;
     position: relative;
     margin: auto;
     overflow: hidden;
