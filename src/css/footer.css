@@ -9,6 +9,7 @@
         text-align: center;
         margin-top: 4.5rem;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -16,6 +17,7 @@
         padding: 0;
         margin: 0; 
         display: flex;
+        align-self: center;
     }
 
     .footer-logo figure img {
@@ -67,42 +69,40 @@
         color: var(--main-color);
     }
 
-    /*------Social media icons------*/
-    div.social {
+    /*------Icons------*/
+    div.icons {
         display: inline-block;
         margin-top: 1rem;
         list-style: none;
         padding: 0;
     }
 
-    .social {
+    .icons {
         content: "";
         display: none;
     }
 
-    div.social ul {
+    div.icons ul {
         display: flex; /* Ensure icons inside <ul> are side by side */
         padding: 0; /* Remove any unwanted padding */
         margin: 0; /* Reset margins */
     }
 
 
-    div.social ul li a {
+    div.icons ul li a {
         display: flex;
         width: 2rem;
         height: 2rem;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        padding-right: 1rem;
-        padding-left: 2rem;
     }
 
-    div.social ul li a.instagram {
+    div.icons ul li a.instagram {
         background-image: url("../img/instagram.png");
     }
 
-    div.social li a:hover {
+    div.icons li a:hover {
         opacity: 0.7;
     }
 
@@ -145,32 +145,44 @@ Media query for medium and big devices
         font-size: 0.9rem;
     }
 
-    .social {
-        display: flex;
-        justify-content: flex-end; /* Align social icons to the right */
+    /*------Icons------*/
+    div.icons {
+        display: inline-block;
+        margin-top: 1rem;
+        list-style: none;
+        padding: 0;
+    }
+
+    .icons {
         content: "";
         display: none;
     }
 
-    .footer-nav ul, .footer-links ul {
+    div.icons ul {
+        display: flex; /* Ensure icons inside <ul> are side by side */
+        padding: 0; /* Remove any unwanted padding */
+        margin: 0; /* Reset margins */
+        gap: 5rem;
+    }
+
+
+    div.icons ul li a {
         display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: flex-end;    
+        width: 2rem;
+        height: 2rem;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-right: 1rem;
+        padding-left: 2rem;
     }
 
-    .footer-nav ul li, .footer-links ul li {
-        margin-right: 0; /* Space out the list items */
+    div.icons ul li a.instagram {
+        background-image: url("../img/instagram.png");
     }
 
-    /*.footer-nav ul li:not(:last-child)::after {
-        content: "|";
-        margin-left: 1rem;
-        margin-right: 1rem;
-        color:var(--light-color); /* Adjust separator color 
-    }*/
-
-    .social ul li:not(:last-child)::after {
-        content: none;
+    div.icons li a:hover {
+        opacity: 0.7;
     }
+
 }
