@@ -145,6 +145,15 @@ Media query for medium and big devices
         font-size: 0.9rem;
     }
 
+    .footer-links-about ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .footer-links-about li {
+        margin: 0.5rem 0; /* Adjust spacing for vertical layout */
+    }
+
     /*------Icons------*/
     div.icons {
         display: inline-block;
