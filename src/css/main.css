@@ -59,6 +59,12 @@ p.nunito-bold {
     margin-bottom: 0.5rem;
 }
 
+p.index-tagline, p.tagline {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+
 a {
     color: var(--main-color);
     text-decoration: none;
@@ -269,7 +275,7 @@ section.recipes {
     line-height: 1.5;
 }
 
-.ingredients ul li, .instructions ul li {
+.ingredients ul li, .instructions ol li {
     list-style-type: none;
     margin-bottom: 0.5rem;
     padding-bottom: 1rem;
