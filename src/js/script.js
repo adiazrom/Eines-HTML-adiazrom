@@ -22,6 +22,7 @@ function navigateSlides(event, direction) {
   }
 }
 
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("featured-preview");
