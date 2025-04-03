@@ -79,13 +79,16 @@
 
     .icons {
         content: "";
-        display: none;
+        display: flex;
     }
 
     div.icons ul {
         display: flex; /* Ensure icons inside <ul> are side by side */
         padding: 0; /* Remove any unwanted padding */
         margin: 0; /* Reset margins */
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
 
 
@@ -94,6 +97,9 @@
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        height: 2rem;
+        width: auto;
+        max-width: 100%;
     }
 
     div.icons ul li a.instagram {
