@@ -30,7 +30,7 @@
         font-size: 0.6rem;
         margin: 0;
         padding: 0;
-        text-aalign: center;
+        text-align: center;
     }
 
     /*------Footer navigation------*/
@@ -52,6 +52,7 @@
     .footer-links-about ul li {
         font-size: 0.6rem;
         list-style-type: none;
+        text-align: center;
     }
 
     .footer-links-about li:nth-child(1) {
