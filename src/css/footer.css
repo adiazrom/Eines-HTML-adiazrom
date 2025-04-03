@@ -27,7 +27,7 @@
 
     footer p {
         color: var(--dark-color);
-        font-size: 0.85rem;
+        font-size: 0.6rem;
         margin: 0;
         padding: 0;
     }
@@ -47,8 +47,9 @@
         padding: 0;
     }
 
-    .footer-links-about li {
+    .footer-links-about ul li {
         font-size: 0.6rem;
+        list-style-type: none;
     }
 
     .footer-links-about li:nth-child(1) {
