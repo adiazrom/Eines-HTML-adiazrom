@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Ensure that the elements exist before adding event listeners
   if (menuToggle && navMenu) {
     menuToggle.addEventListener("click", function () {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 768) { // Only toggle on mobile
             navMenu.classList.toggle("active");
         }
     });
