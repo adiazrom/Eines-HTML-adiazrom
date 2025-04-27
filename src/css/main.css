@@ -44,12 +44,7 @@ h2.index {
     font-size: 2rem;
 }
 
-p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-li {
+p, li {
     font-size: 0.9rem;
     line-height: 1.5;
 }
@@ -283,16 +278,16 @@ section.recipes {
 
 .step-number {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
-    background-color: var(--accent-color); /* Replace with your desired color */
+    background-color: var(--main-color); /* Replace with your desired color */
     color: white;
     font-weight: bold;
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
 figure.recipe-page-img {
