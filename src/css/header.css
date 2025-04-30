@@ -48,7 +48,7 @@
     transform: translateX(-50%);
     width: max-content;
     min-width: 10rem;
-    background-color: var(--light-color);
+    background-color: var(--accent-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
     padding: 0.5rem 0;
