@@ -76,7 +76,7 @@
     
 }
 
-.wave-loop-container {
+.wave-float-container {
     position: relative;
     width: 100%;
     height: 100px;
@@ -84,45 +84,41 @@
     line-height: 0;
   }
   
-  .wave-loop {
+  .wave {
     position: absolute;
-    width: 200%;
-    height: 100px;
-    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
   
-  .wave-loop svg {
-    width: 50%;
-    height: 100px;
-  }
-  
-  .wave-loop path {
+  .wave path {
     fill: var(--accent-color);
   }
   
-  .wave-front {
-    z-index: 2;
-    animation: floatWave 4s ease-in-out infinite alternate;
-}
-  
   .wave-back {
-    z-index: 1;
     opacity: 0.5;
     animation: floatWave 6s ease-in-out infinite alternate;
-}
+  }
   
   .wave-back path {
-    fill: var(--link-color); /* lighter tone */
+    fill: var(--accent-light-color);
   }
   
-  @keyframes waveSlide {
+  .wave-front {
+    z-index: 1;
+    animation: floatWave 4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes floatWave {
     0% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateY(-10px);
     }
   }
+  
   
   
 
