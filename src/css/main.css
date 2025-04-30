@@ -45,7 +45,7 @@ h2.index {
 }
 
 p, li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -201,6 +201,45 @@ Card styles
     animation-duration: 1.5s;
 }
 
+.categories-wrapper {
+    display: flex;
+    gap: 2rem; /* space between items */
+    justify-content: center; /* or space-around/space-between */
+    flex-wrap: wrap; /* allows items to wrap to the next line when needed */
+}
+  
+.category-container {
+    text-align: center;
+    flex: 1 1 calc(16.66% - 2rem); /* 6 items per row on desktop (100% ÷ 6 ≈ 16.66%) */
+    box-sizing: border-box; /* Ensure padding and margin are included in the width */
+}
+
+.category-path {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* removes underline from figcaption */
+    color: inherit; /* ensures link doesn't change text color */
+}
+  
+.category-path img {
+    width: 200px; /* adjust as needed */
+    height: 200px; /* make it square to create a perfect circle */
+    object-fit: cover;
+    clip-path: circle(50%);
+    transition: transform 0.3s ease;
+}
+  
+.category-path img:hover {
+    transform: scale(1.05); /* optional hover effect */
+}
+  
+.category-path figcaption {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
 section.recipes {
     margin-top: 3rem;
 }
@@ -250,7 +289,6 @@ section.recipes {
     align-items: center;
     justify-content: center;
     padding-bottom: 0.5rem;
-
 }
 
 .img-container img {
@@ -272,27 +310,88 @@ section.recipes {
 
 .ingredients ul li, .instructions ol li {
     list-style-type: none;
-    margin-bottom: 0.5rem;
     padding-bottom: 1rem;
 }
 
-.step-number {
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    line-height: 30px;
-    text-align: center;
+.instructions ol li p {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 1rem 0;
+  }
+
+  .step-number {
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+    background-color: var(--main-color);
+    color: var(--light-color);
     border-radius: 50%;
-    background-color: var(--main-color); /* Replace with your desired color */
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    margin-right: 1rem;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-right: 0.8rem;
   }
 
 figure.recipe-page-img {
     padding-bottom: 1rem;
 }
+
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients-list li {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients-list label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+.ingredients-list p {
+    margin: 0.3rem 0 0 1.8rem;
+    line-height: 1.4;
+  }
+  
+.ingredients-list input[type="checkbox"] {
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    cursor: pointer;
+}
+  
+.ingredients-list input[type="checkbox"]:checked {
+    background-color: var(--main-color);
+    border-color:var(--main-color);
+}
+  
+.ingredients-list input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+} 
 
 .recipe-page-img img {
     width: 100%;
@@ -306,9 +405,6 @@ figure.recipe-page-img {
     font-size: 0.75rem;
 }
 
-.step-number {
-    font-size: 1rem;
-}
 
 .video-container {
     position: relative;
@@ -397,7 +493,7 @@ Media query for medium and big devices
 
     .ingredients {
         flex: 1;
-        min-width: 20rem;
+        min-width: 30rem;
     }
 
     .recipe-page-img-container {
