@@ -102,14 +102,14 @@
   
   .wave-front {
     z-index: 2;
-    animation: waveSlide 6s linear infinite;
-  }
+    animation: floatWave 4s ease-in-out infinite alternate;
+}
   
   .wave-back {
     z-index: 1;
     opacity: 0.5;
-    animation: waveSlide 10s linear infinite reverse;
-  }
+    animation: floatWave 6s ease-in-out infinite alternate;
+}
   
   .wave-back path {
     fill: var(--link-color); /* lighter tone */
