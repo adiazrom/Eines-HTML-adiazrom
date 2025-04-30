@@ -1,8 +1,8 @@
 
 :root {
-    --main-color: #D64000;
-    --accent-color: #FF9F68;
-    --link-color: #C3E18E;
+    --main-color:#d64000;
+    --accent-color:#ff9f68;
+    --link-color:rgb(195, 225, 142);
     --light-color: #FFFFFF;
     --dark-color: #270A02;
     --background-color: #FFFFFF;
