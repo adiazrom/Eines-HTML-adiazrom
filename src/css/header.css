@@ -100,10 +100,7 @@
     animation-delay: -3s;
     animation-duration: 10s;
   }
-  .parallaxwave > use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-  }
+
   
   @keyframes move-forever {
     0% {
