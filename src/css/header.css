@@ -76,32 +76,54 @@
     
 }
 
-.wave-separator {
+.wave-loop-container {
+    position: relative;
     width: 100%;
+    height: 100px;
     overflow: hidden;
     line-height: 0;
-    position: relative;
   }
   
-  .wave-separator svg {
-    display: block;
-    width: 100%;
+  .wave-loop {
+    position: absolute;
+    width: 200%;
+    height: 100px;
+    display: flex;
+  }
+  
+  .wave-loop svg {
+    width: 50%;
     height: 100px;
   }
   
-  .wave-separator path {
-    fill: var(--accent-color); /* or #fff or any custom color */
-    animation: waveFlow 4s ease-in-out infinite alternate;
+  .wave-loop path {
+    fill: var(--accent-color);
   }
   
-  @keyframes waveFlow {
+  .wave-front {
+    z-index: 2;
+    animation: waveSlide 6s linear infinite;
+  }
+  
+  .wave-back {
+    z-index: 1;
+    opacity: 0.5;
+    animation: waveSlide 10s linear infinite reverse;
+  }
+  
+  .wave-back path {
+    fill: var(--link-color); /* lighter tone */
+  }
+  
+  @keyframes waveSlide {
     0% {
-      d: path("M0,30 C360,0 1080,60 1440,30 C1080,90 360,40 0,70 Z");
+      transform: translateX(0);
     }
     100% {
-      d: path("M0,40 C360,20 1080,80 1440,40 C1080,100 360,50 0,80 Z");
+      transform: translateX(-50%);
     }
   }
+  
   
 
 /*****************************
