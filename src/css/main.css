@@ -628,10 +628,6 @@ figure {
 
 /**************************** Media query for big devices *****************************/
 @media (min-width: 1024px) {
-    p, li {
-        font-size: 1.15rem;
-    }
-
     .featured-text p {
         font-size: 1.3rem;
     }
