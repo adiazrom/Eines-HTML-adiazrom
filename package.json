@@ -8,7 +8,7 @@
     "parcel:build": "parcel build src/*.html",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean optimize:images parcel:build",
+    "build": "npm-run-all clean parcel:build",
     "postcss": "postcss src/css/*.css --use autoprefixer -d dist/css",
     "build:css": "postcss src/css/*.css --use autoprefixer -d dist/css",
     "test": "echo \"Error: no test specified\" && exit 1"
