@@ -20,10 +20,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: var(--accent-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
-    z-index: 1000;
   }
 
   .top-nav ul {
@@ -98,9 +94,6 @@
     flex-direction: row;
     justify-content: center;
     position: static;
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0;
   }
 
     .top-nav ul {
