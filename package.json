@@ -11,8 +11,7 @@
     "build": "npm-run-all clean optimize:images parcel:build",
     "postcss": "postcss src/css/*.css --use autoprefixer -d dist/css",
     "build:css": "postcss src/css/*.css --use autoprefixer -d dist/css",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "optimize:images": "node src/js/sharp-script.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "adiazrom <adiazrom26@gmail.com>",
