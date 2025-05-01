@@ -72,8 +72,7 @@
   
 .top-nav ul li a:hover,
 .top-nav ul li a:active {
-    border-bottom: 1rem solid var(--accent-color);
-    padding-bottom: 0.5rem;
+    border-bottom: 0.5rem solid var(--accent-color);
 }
 
 
