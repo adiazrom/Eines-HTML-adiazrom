@@ -202,6 +202,10 @@ section {
     margin-top: 3rem;
 }
 
+section.categories {
+    margin-bottom: 3rem;
+}
+
 .categories-wrapper {
     display: flex;
     gap: 2rem; /* space between items */
