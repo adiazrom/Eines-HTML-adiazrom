@@ -25,7 +25,10 @@
 
     <div class="recipe-page-img">
       <figure class="recipe-page-img">
-        <img src="/src/img/recipe2.jpg" alt="A plate of tomato soup, swirled with cream and topped with fresh parsley.">
+        <picture>
+          <source srcset="/src/img/recipe2-mobile.jpg" media="(max-width: 767px)">
+          <img src="/src/img/recipe2.jpg" alt="A plate of tomato soup, swirled with cream and topped with fresh parsley.">
+        </picture>
       </figure>
     </div>
 
@@ -33,12 +36,18 @@
   
         <section class="ingredients">
           <header><h2>INGREDIENTS</h2></header>
-
           <figure class="recipe-page-img">
-            <img src="/src/img/homemade-tomato-soup-695x1024.jpg" alt="A flat lay of fresh ingredients for tomato soup, including ripe tomatoes, garlic, onions, basil, and cream.">
-            <cite>
-              Donofrio, J. (2024, February 28). <a href="https://www.loveandlemons.com/tomato-soup-recipe/">Tomato soup.</a> Love and Lemons.
-            </cite>
+            <picture>
+              <source srcset="/src/img/homemade-tomato-soup-695x1024.avif" type="image/avif">
+              <source srcset="/src/img/homemade-tomato-soup-695x1024.webp" type="image/webp">
+              <img src="/src/img/homemade-tomato-soup-695x1024.jpg" alt="A flat lay of fresh ingredients for tomato soup, including ripe tomatoes, garlic, onions, basil, and cream.">
+            </picture>
+           
+            <figcaption>
+              <cite>
+                Donofrio, J. (2024, February 28). <a href="https://www.loveandlemons.com/tomato-soup-recipe/">Tomato soup.</a> Love and Lemons.
+              </cite>
+            </figcaption>
           </figure>
 
           <ul class="ingredients-list">
@@ -88,7 +97,11 @@
           </ul>
 
           <figure class="recipe-page-img">
-            <img src="/src/img/tomato-soup-723x1024.jpg" alt="A bowl of rich tomato soup, swirled with cream and garnished with fresh parsley, with bread on the side.">
+            <img 
+              src="/src/img/tomato-soup-723x1024.jpg" 
+              srcset="
+
+              alt="A bowl of rich tomato soup, swirled with cream and garnished with fresh parsley, with bread on the side.">
             <cite>
               Donofrio, J. (2024, February 28). <a href="https://www.loveandlemons.com/tomato-soup-recipe/">Tomato soup.</a> Love and Lemons.
             </cite>

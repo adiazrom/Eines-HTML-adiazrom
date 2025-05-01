@@ -60,11 +60,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Ensure the elements exist before adding event listeners
   if (menuToggle && navMenu) {
     menuToggle.addEventListener("click", function () {
-        // Only toggle the menu on mobile screens
-        if (window.innerWidth < 768) {
-            navMenu.classList.toggle("active"); // Toggle the "active" class
-        }
+      // Only toggle the menu on mobile screens
+      if (window.innerWidth < 768) {
+        console.log("Mobile screen detected, toggling menu...");
+        navMenu.classList.toggle("active"); // Toggle the "active" class
+      }
     });
+  } else {
+    console.error("Menu toggle or navigation menu not found.");
   }
 });
 

@@ -31,7 +31,7 @@
 }
 
 .top-nav.active {
-    display: flex;
+    display: block;
 }
 
 .top-nav ul {
