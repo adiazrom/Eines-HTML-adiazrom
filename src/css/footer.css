@@ -112,9 +112,9 @@
 
 
 /*****************************
-Media query for medium and big devices
+Media query for big devices
 *****************************/
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
         
     .footer {
         width: 100%;

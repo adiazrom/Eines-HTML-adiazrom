@@ -16,24 +16,25 @@ body {
     flex-direction: column;
 }
 
+h1, h2, h3 {
+    text-align: center;
+}
+
 h1 {
     font-size: 2.3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-align: center;
 }
 
 h2 {
     font-size: 1.5rem;
     margin-top: 0.51rem;
     margin-bottom: 2rem;
-    text-align: center;
 }
 
 h3 {
     font-size: 1.1rem;
     margin: 0.5rem 0;
-    text-align: center;
 }
 
 h2.index {
@@ -219,17 +220,18 @@ section.categories {
   
 .category-container {
     text-align: center;
-    flex: 1 1 calc(16.66% - 2rem); /* 6 items per row on desktop (100% ÷ 6 ≈ 16.66%) */
     box-sizing: border-box; /* Ensure padding and margin are included in the width */
 }
 
 .category-path {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     text-decoration: none; /* removes underline from figcaption */
     color: inherit; /* ensures link doesn't change text color */
+    gap: 1rem;
+    line-height: 0; /* removes extra inline spacing */
 }
   
 .category-path img {
@@ -238,6 +240,7 @@ section.categories {
     object-fit: cover;
     clip-path: circle(50% at 50% 50%);
     transition: transform 0.3s ease;
+    
 }
   
 .category-path img:hover {
@@ -247,6 +250,7 @@ section.categories {
 .category-path figcaption {
     margin-top: 0.5rem;
     font-size: 1.2rem;
+    
 }
 .card-container {
     width: 100%;
@@ -464,30 +468,14 @@ figure {
 /**************************** Media query for medium devices *****************************/
 @media (min-width: 768px) {
     .featured-slideshow {
-        width: 100%;
-        max-width: 1000px;
         height: 70vh;
-        position: relative;
-        margin: auto;
-        overflow: hidden;
-        border-radius: 0.5rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     .img-featured img {
-        width: 100%; 
         height: 50vh; 
-        object-fit: cover;
-        border-radius: 0.5rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }   
 
-    .card-preview {
-        flex-direction: row;
-        height: 18rem; /* or adjust to what fits your design */
-      }
-
-      .img-container {
+    .img-container {
         width: 43%;
         height: 100%; /* fills height of .card-preview */
         aspect-ratio: auto; /* disables aspect ratio on desktop, since height is controlled */
@@ -568,207 +556,19 @@ figure {
         border-radius: 5px;
     }
 
-    /************* Category section *************/
-
-    .categories-wrapper {
-        display: flex;
-        gap: 2rem;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .categories-tagline {
-        text-align: center;
-    }
-    
     .category-container {
-        text-align: center;
         flex: 1 1 calc(16.66% - 2rem);
-        box-sizing: border-box;
     }
 
-    .category-path {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    .category-path img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        clip-path: circle(50%);
-        transition: transform 0.3s ease;
-    }
-    
-    .category-path img:hover {
-        transform: scale(1.05);
-    }
-    
-    .category-path figcaption {
-        margin-top: 0.5rem;
-        font-size: 1.2rem;
-    }
 }    
 
 /**************************** Media query for big devices *****************************/
 @media (min-width: 1024px) {
-    .featured-slideshow {
-        width: 100%;
-        max-width: 1000px;
-        height: 70vh;
-        position: relative;
-        margin: auto;
-        overflow: hidden;
-        border-radius: 0.5rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .img-featured img {
-        width: 100%; 
-        height: 50vh; 
-        object-fit: cover;
-        border-radius: 0.5rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
     
     .card-container {
         grid-template-columns: repeat(2, 1fr); /* TWO columns on desktop */
       }
 
-    .card-preview {
-        flex-direction: row;
-        height: 18rem; /* or adjust to what fits your design */
-      }
-
-      .img-container {
-        width: 43%;
-        height: 100%; /* fills height of .card-preview */
-        aspect-ratio: auto; /* disables aspect ratio on desktop, since height is controlled */
-      }
-
-    .img-container picture img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .text-container {
-        width: 60%;
-      }
-
-    .text-container h2 {
-        margin: 0;
-        font-size: 1.5rem;
-        text-align: left;
-    }
-
-    .text-container p {
-        margin: 0.5rem 0;
-        flex-grow: 1;
-    }
-
-    .text-container a {
-        align-self: flex-end;
-        text-decoration: none;
-        color:var(--main-color);
-    }
-
-    .text-container a:hover {
-        text-decoration: underline;
-        color: var(--accent-color);
-    }
-
-    .recipe-page-container {
-        display: flex;
-        align-items: flex-start;
-        gap: 3rem;
-    }
-
-    .ingredients {
-        flex: 1;
-        min-width: 30rem;
-    }
-
-    .recipe-page-img-container {
-        flex: 1;
-        display: inline-flex;
-        width: 30%;
-        height: auto;}
-    
-    .pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        list-style: none;
-        padding: 0;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-          
-    .pagination a {
-        text-decoration: none;
-        color: var(--dark-color);
-        border-radius: 5px;
-    }
-
-    .pagination .active {
-        background-color: var(--main-color);
-        color: var(--light-color);
-        float: left;
-        padding: 8px 16px;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-
-    /************* Category section *************/
-
-    .categories-wrapper {
-        display: flex;
-        gap: 2rem;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .categories-tagline {
-        text-align: center;
-    }
-    
-    .category-container {
-        text-align: center;
-        flex: 1 1 calc(16.66% - 2rem);
-        box-sizing: border-box;
-    }
-
-    .category-path {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    .category-path img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        clip-path: circle(50%);
-        transition: transform 0.3s ease;
-    }
-    
-    .category-path img:hover {
-        transform: scale(1.05);
-    }
-    
-    .category-path figcaption {
-        margin-top: 0.5rem;
-        font-size: 1.2rem;
-    }
 }    
 
 
