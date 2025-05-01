@@ -12,9 +12,9 @@
     "postcss": "postcss src/css/*.css --use autoprefixer -d dist/css",
     "build:css": "postcss src/css/*.css --use autoprefixer -d dist/css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "optimize:images": "node src/js/script.js"  
-
+    "optimize:images": "node src/js/script.js"
   },
+
   "keywords": [],
   "author": "adiazrom <adiazrom26@gmail.com>",
   "license": "ISC",
