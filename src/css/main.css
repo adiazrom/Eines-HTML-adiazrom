@@ -332,6 +332,7 @@ section.recipes {
 .text-container h2 {
     margin: 0;
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .text-container p {
@@ -342,11 +343,12 @@ section.recipes {
 .text-container a {
     align-self: flex-end; /* places Read More at bottom right */
     text-decoration: none;
-    color: #007BFF;
+    color:var(--main-color);
 }
 
 .text-container a:hover {
     text-decoration: underline;
+    color: var(--accent-color); /* Change color on hover */
 }
 
 
