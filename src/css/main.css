@@ -203,6 +203,10 @@ a:hover {
     justify-content: center; /* or space-around/space-between */
     flex-wrap: wrap; /* allows items to wrap to the next line when needed */
 }
+
+.categories-tagline {
+    text-align: center;
+}
   
 .category-container {
     text-align: center;

@@ -68,21 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const links = document.querySelectorAll('#nav-links a');
-  const currentPath = window.location.pathname.replace(/\/+$/, ''); // remove trailing slash
-
-  links.forEach(link => {
-    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/+$/, '');
-
-    if (linkPath.endsWith(currentPath) || currentPath.endsWith(linkPath)) {
-      link.classList.add('active');
-    }
-  });
-});
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   // Get current path depth
   let depth = window.location.pathname.split("/").length - 2; // Adjust if needed
