@@ -455,12 +455,17 @@ figure {
   margin-left: 2rem;
 }
 
+/**************************** Maintenance page *****************************/
+.maintenance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
-/****************************
-Media query for medium and big devices
-*****************************/
+/**************************** Media query for medium and big devices *****************************/
 @media (min-width: 768px) {
     .featured-slideshow {
         width: 100%;
