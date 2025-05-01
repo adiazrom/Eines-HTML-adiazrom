@@ -246,6 +246,7 @@ section.recipes {
 
 .card-container {
     width: 100%;
+    max-height: 15rem;
     display: grid;
     gap: 2rem;
     justify-content: center;
