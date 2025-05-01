@@ -72,9 +72,9 @@
   
 .top-nav ul li a:hover,
 .top-nav ul li a:active {
-    text-decoration: solid underline var(--main-color) 4px;
-    border-radius: 25%;
-    
+    border-bottom: 1rem solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    border-radius: 50%;
 }
 
 
