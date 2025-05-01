@@ -20,18 +20,18 @@
 }
 
 .top-nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: var(--accent-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
-    z-index: 1000;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--accent-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  z-index: 1000;
 }
 
 .top-nav.active {
-    display: block;
+  display: flex;
 }
 
 .top-nav ul {
@@ -51,30 +51,13 @@
     transition: background 0.3s ease-in-out;
     border-radius: 25rem;
 }
-
-/*.top-nav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-  }
-  
-.top-nav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }*/
   
 .top-nav ul li a:hover,
 .top-nav ul li a:active {
     border-bottom: 0.2rem solid var(--accent-color);
 }
 
+/***************************** SVG Divider *****************************/
 
 .wave {
     position:relative;
@@ -84,7 +67,6 @@
     min-height: 40px;
     max-height: 80px;
   }
-  
   
   /* Animation */
   
@@ -118,35 +100,23 @@
 
 /***************************** Media query for medium and big devices *****************************/
 @media (min-width: 768px) {
-    .menu-toggle {
-        display: none; /* Hide the hamburger menu */
-    }
-
-    .top-nav {
-        display: flex;
-        position: static;
-        transform: none;
-        justify-content: space-between;
-        align-items: center;
-        width: auto;
-        background: transparent;
-        box-shadow: none;
-        /*padding-right: 3rem;*/
-    }
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
 
     .top-nav ul {
         display: flex;
-        flex-direction: row;
         gap: 1rem;
     }
 
-    .top-nav ul li {
-        margin: 0 1rem;
-    }
-
-    .top-nav ul li a {
-        padding: 0.5rem 1rem;
-        display: inline-block;
+    .top-nav.active {
+        display: flex; /* ensure it's always visible on desktop */
     }
 
     .header-logo {
