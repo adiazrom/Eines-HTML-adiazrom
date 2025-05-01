@@ -70,12 +70,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('#nav-links a');
-  const currentPath = window.location.pathname;
+  const currentPath = window.location.pathname.replace(/\/+$/, ''); // remove trailing slash
 
   links.forEach(link => {
-    const linkPath = new URL(link.href, window.location.origin).pathname;
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/+$/, '');
 
-    if (linkPath === currentPath) {
+    if (linkPath.endsWith(currentPath) || currentPath.endsWith(linkPath)) {
       link.classList.add('active');
     }
   });
