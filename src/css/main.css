@@ -513,6 +513,10 @@ figure {
         height: 50vh; 
     }   
 
+    .featured-text p {
+        font-size: 1.1rem;
+    }
+
     .img-container {
         width: 43%;
         height: 100%; /* fills height of .card-preview */
@@ -624,9 +628,13 @@ figure {
 
 /**************************** Media query for big devices *****************************/
 @media (min-width: 1024px) {
-    /*.featured-slideshow {
-        height: 100%;
-    }*/
+    p, li {
+        font-size: 1.15rem;
+    }
+
+    .featured-text p {
+        font-size: 1.3rem;
+    }
 
     .card-container {
         grid-template-columns: repeat(2, 1fr); /* TWO columns on desktop */
@@ -634,7 +642,7 @@ figure {
     
     .card-preview {
         flex-direction: row;
-        height: 18rem; /* or adjust to what fits your design */
+        height: 20rem; /* or adjust to what fits your design */
       }
 
       .img-container {
