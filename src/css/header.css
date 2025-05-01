@@ -15,47 +15,36 @@
     margin: 0 auto;
 }
 
-.menu-toggle {
-    margin-bottom: 1rem;
-}
-
 .top-nav {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: var(--accent-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 0.5rem;
-  z-index: 1000;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--accent-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    z-index: 1000;
+  }
 
-.top-nav.active {
-  display: flex;
-}
+  .top-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
 
-.top-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+  .top-nav ul li {
+      font-weight: bold;
+  }
 
-.top-nav ul li {
-    font-weight: bold;
-}
-
-.top-nav ul li a {
-    text-decoration: none;
-    color: var(--dark-color);
-    display: block;
-    transition: background 0.3s ease-in-out;
-    border-radius: 25rem;
-}
+  .top-nav ul li a {
+      text-decoration: none;
+      color: var(--dark-color);
+      display: block;
+      transition: background 0.3s ease-in-out;
+      border-radius: 25rem;
+  }
   
-.top-nav ul li a:hover,
-.top-nav ul li a:active {
-    border-bottom: 0.2rem solid var(--accent-color);
-}
+
 
 /***************************** SVG Divider *****************************/
 
@@ -100,6 +89,10 @@
 
 /***************************** Media query for medium and big devices *****************************/
 @media (min-width: 768px) {
+  .header-logo {
+    padding-left: 3rem;
+}
+
   .top-nav {
     display: flex;
     flex-direction: row;
@@ -119,9 +112,12 @@
         display: flex; /* ensure it's always visible on desktop */
     }
 
-    .header-logo {
-        padding-left: 3rem;
+    .top-nav ul li a:hover,
+    .top-nav ul li a:active {
+        border-bottom: 0.2rem solid var(--accent-color);
     }
+
+
 }
 
 

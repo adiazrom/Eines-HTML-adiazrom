@@ -52,26 +52,6 @@ function showSlides(n) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOM loaded");
-
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector(".top-nav");
-
-  // Ensure the elements exist before adding event listeners
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener("click", function () {
-      // Only toggle the menu on mobile screens
-      if (window.innerWidth < 768) {
-        console.log("Mobile screen detected, toggling menu...");
-        navMenu.classList.toggle("active"); // Toggle the "active" class
-      }
-    });
-  } else {
-    console.error("Menu toggle or navigation menu not found.");
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   // Get current path depth
   let depth = window.location.pathname.split("/").length - 2; // Adjust if needed
   let prefix = depth > 0 ? "../".repeat(depth) : "./";
