@@ -72,7 +72,7 @@
   
 .top-nav ul li a:hover,
 .top-nav ul li a:active {
-    border-bottom: 0.5rem solid var(--accent-color);
+    border-bottom: 0.2rem solid var(--accent-color);
 }
 
 
@@ -113,9 +113,7 @@
   
   
 
-/*****************************
-Media query for medium and big devices
-*****************************/
+/***************************** Media query for medium and big devices *****************************/
 @media (min-width: 768px) {
     .menu-toggle {
         display: none; /* Hide the hamburger menu */
@@ -152,3 +150,11 @@ Media query for medium and big devices
         padding-left: 3rem;
     }
 }
+
+
+@media (prefers-reduced-motion: reduce) {
+    .parallaxwave > use {
+      animation: none;
+    }
+  }
+  

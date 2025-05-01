@@ -232,7 +232,7 @@ section {
     width: 8rem;
     height: 8rem;
     object-fit: cover;
-    clip-path: circle(50%);
+    clip-path: circle(50% at 50% 50%);
     transition: transform 0.3s ease;
 }
   
