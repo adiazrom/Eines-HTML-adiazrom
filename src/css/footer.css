@@ -26,7 +26,7 @@
 
     footer p {
         color: var(--dark-color);
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         margin: 0;
         padding: 0;
         text-align: center;
@@ -49,7 +49,7 @@
     }
 
     .footer-links-about ul li {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         list-style-type: none;
         text-align: center;
     }
