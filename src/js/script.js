@@ -70,14 +70,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('#nav-links a');
-  const currentPath = window.location.pathname.split('/').pop(); // gets "index.html"
+  const currentPath = window.location.pathname;
 
   links.forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
+    const linkPath = new URL(link.href, window.location.origin).pathname;
+
+    if (linkPath === currentPath) {
       link.classList.add('active');
     }
   });
 });
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get current path depth
