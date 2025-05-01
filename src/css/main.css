@@ -299,86 +299,56 @@ section.recipes {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }*/
 
-.card-container {
-    width: 100%;
-    display: grid;
-    gap: 2rem;
-    justify-content: center;
-    align-items: stretch;
-}
-
 .card-preview {
     background-color: var(--light-color);
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 0.5rem;
-    position: relative;
-    width: 100%;
-    display: flex; /* Change to flexbox */
-    flex-direction: row; /* Arrange elements in a row */
-    justify-content: flex-start; /* Align the content */
-    align-items: center; /* Vertically center content */
-    height: auto;
-}
-
-.card-preview h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.card-preview p {
-    margin: 1rem 0;
-}
-
-.card-preview a {
-    display: inline-block;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.card-preview a:hover {
-    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
 }
 
 .img-container {
-    width: 40%; /* Image takes 40% of the container width */
-    height: auto;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 1rem; /* Space between image and text */
 }
 
 .img-container picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.card-preview div {
-    width: 60%; /* Text section takes 60% of the width */
+.text-container {
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1rem;
 }
 
-.card-preview h2 {
+.text-container h2 {
+    margin: 0;
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
 }
 
-.card-preview p {
+.text-container p {
     margin: 0.5rem 0;
     flex-grow: 1;
 }
 
-.card-preview a {
-    align-self: flex-start;
-    margin-top: auto;
+.text-container a {
+    align-self: flex-end; /* places Read More at bottom right */
+    text-decoration: none;
+    color: #007BFF;
 }
+
+.text-container a:hover {
+    text-decoration: underline;
+}
+
 
 
 /**************************** Detailed page *****************************/
