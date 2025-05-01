@@ -68,6 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('#nav-links a');
+  const currentPath = window.location.pathname.split('/').pop(); // gets "index.html"
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('active');
+    }
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get current path depth
@@ -85,3 +95,5 @@ document.addEventListener("DOMContentLoaded", function () {
   })
   .catch(error => console.log("Error loading header or footer:", error));
 });
+
+
