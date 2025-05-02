@@ -62,7 +62,8 @@ p.index-tagline, p.tagline {
 a {
     color: var(--main-color);
     text-decoration: none;
-    margin: 1rem 0 0.5rem 0;
+    /*margin: 1rem 0 0.5rem 0;*/
+    min-height: 2.75rem;
 }
 
 a:hover {
@@ -457,24 +458,30 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
     list-style: none;
     padding: 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
       
+  .pagination li {
+    list-style: none;
+    display: inline-block;
+  }
+
   .pagination a {
     text-decoration: none;
     color: var(--dark-color);
     border-radius: 5px;
+    padding: 0.5rem 1rem;
   }
 
   .pagination .active {
     background-color: var(--main-color);
     color: var(--light-color);
     float: left;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
 }
