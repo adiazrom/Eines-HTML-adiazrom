@@ -62,7 +62,7 @@ p.index-tagline, p.tagline {
 a {
     color: var(--main-color);
     text-decoration: none;
-    /*margin: 1rem 0 0.5rem 0;*/
+    margin: 1rem 0 0.5rem 0;
     min-height: 2.75rem;
 }
 
@@ -173,6 +173,7 @@ a:hover {
     color: var(--dark-color);
 }
 
+/*
 .dot-container {
     text-align: center;
     position: absolute;
@@ -198,6 +199,7 @@ a:hover {
   .active, .dot:hover {
     background-color: var(--main-color);
 }
+*/
 
 @keyframes fade {
     from {opacity: .4;}
