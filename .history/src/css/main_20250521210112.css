@@ -427,39 +427,33 @@ figure {
 }
 
 .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
     max-width: 100%;
   }
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
 
 .video-container cite {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.4;
+    position: relative;
+    font-size: 1rem;
 }
 
 .youtube-facade {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   cursor: pointer;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
 .youtube-facade img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .youtube-facade .play-button {

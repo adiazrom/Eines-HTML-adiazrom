@@ -427,31 +427,24 @@ figure {
 }
 
 .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
     max-width: 100%;
   }
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
 
 .video-container cite {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.4;
+    font-size: 1rem;
 }
 
 .youtube-facade {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   cursor: pointer;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
@@ -466,18 +459,16 @@ figure {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 60px;
-  height: 60px;
-  background: rgba(0, 0, 0, 0.6);
-  border: none;
-  border-radius: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
-  cursor: pointer;
+  background: url('https://img.icons8.com/ios-filled/100/ffffff/play--v1.png') no-repeat center;
+  background-size: 60px;
+  width: 80px;
+  height: 80px;
+  border: none;
+  opacity: 0.8;
+  transition: opacity 0.3s;
 }
+
 
 
 .links h2 {
