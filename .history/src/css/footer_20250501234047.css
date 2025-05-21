@@ -72,7 +72,45 @@
         color: var(--main-color);
     }
 
-    
+    /*------Icons------*/
+    div.icons {
+        display: inline-block;
+        margin-top: 1rem;
+        list-style: none;
+        padding: 0;
+    }
+
+    .icons {
+        content: "";
+        display: flex;
+    }
+
+    div.icons ul {
+        display: flex; /* Ensure icons inside <ul> are side by side */
+        padding: 0; /* Remove any unwanted padding */
+        margin: 0; /* Reset margins */
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+
+    div.icons ul li a {
+        display: flex;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: auto;
+        max-width: 100%;
+    }
+
+    div.icons li a:hover {
+        opacity: 0.7;
+    }
+
+
+
 /*****************************
 Media query for big devices
 *****************************/
@@ -117,6 +155,37 @@ Media query for big devices
 
     .footer-links-about li {
         margin: 0.5rem 0; /* Adjust spacing for vertical layout */
+    }
+
+    /*------Icons------*/
+    div.icons {
+        display: inline-block;
+        margin-top: 1rem;
+        list-style: none;
+        padding: 0;
+    }
+
+    .icons {
+        content: "";
+        display: none;
+    }
+
+    div.icons ul {
+        display: flex; /* Ensure icons inside <ul> are side by side */
+        padding: 0; /* Remove any unwanted padding */
+        margin: 0; /* Reset margins */
+        gap: 5rem;
+    }
+
+    div.icons ul li a {
+        display: flex;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    div.icons li a:hover {
+        opacity: 0.7;
     }
 
 }
