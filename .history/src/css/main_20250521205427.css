@@ -450,6 +450,12 @@ figure {
     font-size: 1rem;
 }
 
+.links h2 {
+    margin-top: 2.5rem;
+    text-decoration: solid underline;
+    text-align: left;
+}
+
 .youtube-facade {
   position: relative;
   cursor: pointer;
@@ -480,13 +486,6 @@ figure {
   background-position: center;
   background-size: 50%;
   cursor: pointer;
-}
-
-
-.links h2 {
-    margin-top: 2.5rem;
-    text-decoration: solid underline;
-    text-align: left;
 }
 
 /**************************** Categories page *****************************/
