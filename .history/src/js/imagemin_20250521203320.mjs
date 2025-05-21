@@ -9,7 +9,7 @@ const run = async () => {
       {
         destination: '../img-opt',
         plugins: [
-          imageminMozjpeg({ quality: 70 , progressive: true})
+          imageminMozjpeg({ quality: 75 , progressive: true})
         ]
       }
     );
