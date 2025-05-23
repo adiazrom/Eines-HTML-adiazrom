@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Facade per YouTube
+// Facade per YouTube
+document.addEventListener("DOMContentLoaded", function () {
   const facades = document.querySelectorAll(".youtube-facade");
 
   facades.forEach(facade => {
