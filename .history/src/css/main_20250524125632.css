@@ -79,40 +79,138 @@ a:hover {
 
 /**************************** Index page *****************************/
 /************** Featured section **************/
+
 .featured-slideshow {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr; /* mòbil: una columna */
-  padding-block: 1rem;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .featured-preview {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--light-color);
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
-.img-featured {
-  aspect-ratio: 16 / 9;
-  flex-shrink: 0;
+    display: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
-.img-featured picture img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 0.5rem 0.5rem 0 0;
-  display: block;
+.featured-preview:first-child {
+    display: block; /* Show only the first slide */
+}
+
+.img-featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .img-featured picture,
+  .img-featured picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .img-featured::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+    linear-gradient(to bottom, white 0%, rgba(255,255,255,0) 20%, transparent 100%),
+    linear-gradient(to left, white 0%, rgba(255,255,255,0) 20%, transparent 100%),
+    linear-gradient(to right, white 0%, rgba(255,255,255,0) 20%, transparent 100%);   pointer-events: none;
+    z-index: 1;
 }
 
 .featured-text {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .featured-text p {
+    font-size: 0.9rem;
+  }
+
+  .featured-text a {
+    margin: 1rem 0;
+}
+  
+.prev, .next {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    color: var(--dark-color);
+}
+
+/*
+.dot-container {
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: var(--main-color);
+}
+*/
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 section {
@@ -332,53 +430,53 @@ figure {
     max-width: 100%;
   }
 
-   .video-wrapper {
-   position: relative;
-   width: 100%;
-   padding-bottom: 56.25%;
-   height: 0;
-   overflow: hidden;
-   }
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
 
-   .video-container cite {
-   display: block;
-   margin-top: 0.5rem;
-   font-size: 1rem;
-   line-height: 1.4;
-   }
+.video-container cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
 
-   .youtube-facade {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   cursor: pointer;
-   overflow: hidden;
-   }
+.youtube-facade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
 
-   .youtube-facade img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   display: block;
-   }
+.youtube-facade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-   .youtube-facade .play-button {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 60px;
-   height: 60px;
-   background: rgba(0, 0, 0, 0.6);
-   border: none;
-   border-radius: 50%;
-   transform: translate(-50%, -50%);
-   background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>');
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: 50%;
-   cursor: pointer;
+.youtube-facade .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  cursor: pointer;
 }
 
 
@@ -452,9 +550,13 @@ figure {
 
 /**************************** Media query for medium devices *****************************/
 @media (min-width: 768px) {
-     .featured-slideshow {
-    grid-template-columns: repeat(2, 1fr); /* dues columnes */
-  }   
+    .img-featured img {
+        height: 50vh; 
+    }   
+
+    .featured-text p {
+        font-size: 1.1rem;
+    }
 
     .img-container {
         width: 43%;

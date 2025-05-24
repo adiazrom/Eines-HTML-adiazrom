@@ -65,7 +65,6 @@
     <section class="featured">
       <h1 id="featured-recipes" class="index lexend-deca-bold">FEATURED RECIPES</h1>
         <div class="featured-slideshow">
-          <div class="featured-preview fade">
             <div class="img-featured">
               <picture>
                 <source srcset="../img-opt/featured1.webp" 
@@ -85,9 +84,7 @@
               </p>
               <a href="cheesecake-lotus.html" title="Learn more about the Cheesecake with Lotus Cookies" aria-label="Read more about the Cheesecake with Lotus Cookies">Read More</a>
             </div>
-          </div>
     
-          <div class="featured-preview fade">
             <div class="img-featured">
               <picture>      
                 <source srcset="../img-opt/featured2.webp" 
@@ -107,9 +104,15 @@
               </p>
               <a href="maintenance.html" aria-label="Read more about the vegan burger recipe">Read More</a>
             </div>
-
+  
+            <!-- Next and previous buttons -->
+          <button class="prev" onclick="plusSlides(-1)" tabindex=0 onkeydown="navigateSlides(event, -1)" aria-label="Previous slide">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)" tabindex=0 onkeydown="navigateSlides(event, 1)" aria-label="Next slide">&#10095;</button>
+  
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
           </div>
-
       </div>
     </section>
   

@@ -1,4 +1,6 @@
 import "../css/styles.css";
+/*import 'core-js/stable';
+import 'regenerator-runtime/runtime';*/
 
 
 let slideIndex = 1;
@@ -10,8 +12,26 @@ function plusSlides(n) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+   
+/*
+   // Navigation buttons
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
 
+  // Only add listeners if the buttons exist
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener("click", () => plusSlides(-1));
+    nextBtn.addEventListener("click", () => plusSlides(1));
 
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+        plusSlides(-1);
+      } else if (event.key === "ArrowRight") {
+        plusSlides(1);
+      }
+    });
+  }
+*/
 
   // Facade per YouTube
   const facades = document.querySelectorAll(".youtube-facade");

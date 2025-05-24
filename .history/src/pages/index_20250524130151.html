@@ -107,9 +107,16 @@
               </p>
               <a href="maintenance.html" aria-label="Read more about the vegan burger recipe">Read More</a>
             </div>
-
           </div>
-
+  
+            <!-- Next and previous buttons -->
+          <button class="prev" onclick="plusSlides(-1)" tabindex=0 onkeydown="navigateSlides(event, -1)" aria-label="Previous slide">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)" tabindex=0 onkeydown="navigateSlides(event, 1)" aria-label="Next slide">&#10095;</button>
+  
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
       </div>
     </section>
   
