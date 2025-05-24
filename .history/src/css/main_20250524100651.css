@@ -148,7 +148,7 @@ a:hover {
 }
   
 .prev, .next {
-    all: unset;
+     all: unset;
     cursor: pointer;
     position: absolute;
     top: 50%;
