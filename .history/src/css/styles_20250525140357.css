@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'Lexend Deca';
-  src: url('../fonts/lexendDeca.woff2') format('woff2');
+  src: url('../fonts/lexend-deca.woff2') format('woff2');
   font-weight: 400 700;          /* De 400 (regular) a 700 (bold) */
   font-style: normal italic;     /* Tant normal com italic */
   font-display: swap;
