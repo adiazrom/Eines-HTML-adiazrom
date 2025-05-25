@@ -188,7 +188,7 @@ section.categories {
     display: flex;
     flex-direction: column; /* mobile: stacked layout */
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
   
 .img-container {
