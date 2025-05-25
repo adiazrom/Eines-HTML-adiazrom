@@ -300,7 +300,6 @@ a:hover {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
    overflow: hidden;
    }
-   
    .img-featured {
    aspect-ratio: 16 / 9;
    flex-shrink: 0;
