@@ -281,12 +281,12 @@ a:hover {
 
 /**************************** Index page *****************************/
 /************** Featured section **************/
-.featured-container {
+section.featured {
    display: grid;
    gap: 2rem;
    grid-template-columns: 1fr;
    padding-block: 1rem;
-   }
+   }*/
 
    .featured-preview {
    display: flex;
@@ -659,7 +659,7 @@ figure {
 
 /**************************** Media query for medium devices *****************************/
 @media (min-width: 768px) {
-      .featured-container {
+      .featured-slideshow {
       grid-template-columns: repeat(2, 1fr); /* dues columnes */
   }
       .header-logo {

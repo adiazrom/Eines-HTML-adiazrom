@@ -659,7 +659,7 @@ figure {
 
 /**************************** Media query for medium devices *****************************/
 @media (min-width: 768px) {
-      .featured-container {
+      .featured {
       grid-template-columns: repeat(2, 1fr); /* dues columnes */
   }
       .header-logo {
