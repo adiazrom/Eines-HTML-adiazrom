@@ -1,3 +1,14 @@
+/**************************** Root variables & typography *****************************/
+:root {
+    --main-color: #D64000;
+    --accent-color: #FF9F68;
+    --link-color: #C3E18E; /* Updated to match new color */;
+    --light-color: #FFFFFF;
+    --dark-color: #270A02;
+    --background-color: #FFFFFF;
+    --low-opacity: rgba(255, 255, 255, 0.7);
+  }
+
 /**************************** Global styles *****************************/
 *, *::before, *::after {
     box-sizing: border-box;
