@@ -11,23 +11,23 @@
 
 .lexend-deca-bold {
     font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-optical-sizing: auto;
   }
 
     .lexend-deca-regular {
         font-family: "Lexend Deca", sans-serif;
+        font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-optical-sizing: auto;
     }
 
     .lexend-deca-italic {
         font-family: "Lexend Deca", sans-serif;
+        font-optical-sizing: auto;
         font-weight: 400;
         font-style: italic;
-        font-optical-sizing: auto;
 }  
 
 /**************************** Global styles *****************************/
@@ -53,9 +53,6 @@ body {
 
 h1, h2, h3 {
     text-align: center;
-    font-family: "Lexend Deca", sans-serif;
-    font-weight: 400;
-    font-style: normal;    
 }
 
 h1,
@@ -113,15 +110,15 @@ a:hover {
 }
 
 .visually-hidden {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   padding: 0;
-   margin: -1px;
-   overflow: hidden;
-   clip: rect(0, 0, 0, 0);
-   white-space: nowrap;
-   border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /************** Container **************/
