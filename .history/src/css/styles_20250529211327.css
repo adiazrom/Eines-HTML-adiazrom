@@ -206,12 +206,6 @@ a:hover {
 
 /***************************** SVG Divider *****************************/
 
-.wavebox {
-  width: 100%;
-  height: 60px; /* mismo valor que .wave */
-  overflow: hidden;
-}
-
 .wave {
     position:relative;
     width: 100%;

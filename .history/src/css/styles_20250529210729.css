@@ -206,17 +206,13 @@ a:hover {
 
 /***************************** SVG Divider *****************************/
 
-.wavebox {
-  width: 100%;
-  height: 60px; /* mismo valor que .wave */
-  overflow: hidden;
-}
-
 .wave {
     position:relative;
     width: 100%;
-    height: 60px;
+    height: 2vh;
     margin-bottom: -7px; /*Fix for safari gap*/
+    min-height: 40px;
+    max-height: 80px;
 }
   
   /* Animation */
@@ -399,8 +395,8 @@ section.categories {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 700;
     font-style: normal;
-    width: auto;
-    height: auto;
+    width: 8rem;
+    height: 8rem;
   }
 
   .category-container img {
