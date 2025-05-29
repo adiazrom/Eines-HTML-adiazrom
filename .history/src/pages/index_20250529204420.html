@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kitchenette is a website where you can find a wide variety of recipes, meal plans, and a community of food lovers.">
+    <title>Kitchenette – Discover Delicious Recipes & Meal Ideas</title>
+    <link rel="icon" href="/src/img/favicon.png">
+    <link rel="preload" href="../css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="../css/styles.css">
+    </noscript>    
+    <script src="../js/script.js" defer></script>
+    <link rel="preload" href="../fonts/LexendDeca.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+
+<body>
+
+     <header class="header-container">
+      <div class="header-logo">
+          <figure>
+            <img 
+               src="../img-opt/logo-343.png" 
+               srcset="../img-opt/logo-343.png 343w"
+               sizes="343px"
+               width="343" 
+               height="82" 
+               alt="Logotipo de Kitchenette"
+               fetchpriority="high">
+            </figure>
+      </div>
+  
+      <div class="top-nav">
+        <nav>
+            <ul id="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./links.html">Links</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="wavebox">
+      <svg class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 30 150 20" preserveAspectRatio="none" shape-rendering="auto" aria-hidden="true">
+        <defs>
+          <path id="onda" d="M-160 20c30 0 58 10 88 10s58-10 88-10 58 10 88 10 58-10 88-10v44h-352Z" />
+        </defs>
+        <g class="parallaxwave">
+          <use xlink:href="#onda" x="48" y="3" fill="#C3E18E" />
+          <use xlink:href="#onda" x="48" y="7" fill="#FF9F68" />
+        </g>
+      </svg>
+    </div>
+
+<h1 class="visually-hidden">Kitchenette – Delicious Recipes and Cooking Inspiration</h1>
+
+  <main class="container">
+
+    <section class="featured">
+      <h2 id="featured-recipes">FEATURED RECIPES</h2>
+        <div class="featured-container">
+          <div class="featured-preview fade">
+            <div class="img-featured">
+              <picture>
+                  <source srcset="../img-opt/featured1.avif 800w" 
+                          type="image/avif" 
+                          sizes="(min-width: 767px) 800px, 100vw">
+                  <source srcset="../img-opt/featured1.webp 800w" 
+                          type="image/webp" 
+                          sizes="(min-width: 767px) 800px, 100vw">
+                  <img src="../img-opt/featured1.jpg" 
+                       alt="A creamy slice of Lotus Biscoff cheesecake with a caramelized cookie crust"
+                       fetchpriority="high" 
+                       width="1200" height="900" 
+                       loading="eager" decoding="async">
+              </picture>
+            </div>
+            <div class="featured-text">
+              <h2>Cheesecake with Lotus Cookies</h2>
+              <p>This incredibly luscious and creamy Biscoff cheesecake with a crunchy speculoos cookie crust is exactly what you never knew you needed. It's such a different flavor from what you commonly see in desserts.
+              </p>
+              <a href="cheesecake-lotus.html" title="Learn more about the Cheesecake with Lotus Cookies" aria-label="Read more about the Cheesecake with Lotus Cookies">Read More</a>
+            </div>
+          </div>
+    
+          <div class="featured-preview fade">
+            <div class="img-featured">
+              <picture>                
+               <source srcset="../img-opt/featured2.avif 800w" 
+                        type="image/avif" 
+                        sizes="(min-width: 767px) 800px, 100vw">      
+                <source srcset="../img-opt/featured2.webp 800w" 
+                        type="image/webp" 
+                        sizes="(min-width: 767px) 800px, 100vw">
+                <img src="../img-opt/featured2.jpg" 
+                     alt="A plant-based burger with a crispy patty, fresh lettuce, tomato slices, and a toasted bun."
+                     fetchpriority="high" 
+                     width="1200" 
+                     height="1200"  
+                     loading="eager" decoding="async">
+              </picture>
+            </div>
+            <div class="featured-text">
+              <h2>Vegan Burger</h2>
+              <p>Using quinoa and brown rice as a base, this flavour-packed patty is great for anyone who is already vegetarian or looking to start their meat-free Monday journey. Pair it with your favourite type of bun, sauces, toppings and some avo.
+              </p>
+              <a href="maintenance.html" aria-label="Read more about the vegan burger recipe">Read More</a>
+            </div>
+
+          </div>
+
+      </div>
+    </section>
+  
+  <section class="categories">
+      <h2 class="categories-tagline">CATEGORIES</h2>
+        <div class="categories-wrapper">
+          <div class="category-container">
+            <figure>
+              <a href="maintenance.html" class="category-path">
+                <picture>
+                  <source srcset="../img-opt/cheesecake-with-flowers-white-plate-400.avif" 
+                          type="image/avif">
+                  <source srcset="../img-opt/cheesecake-with-flowers-white-plate-400.webp" 
+                          type="image/webp">
+                  <img src="../img-opt/cheesecake-with-flowers-white-plate.jpg" 
+                       alt="A slice of cheesecake with flowers and a white plate" 
+                       width="1200" 
+                       height="1200" 
+                       loading="lazy">
+                </picture>
+              </a>
+              <figcaption>Desserts</figcaption>
+            </figure>
+          </div>
+          <div class="category-container">
+            <figure>
+              <a href="maintenance.html" class="category-path">
+                <picture>
+                  <source srcset="../img-opt/delicious-ramen-with-seaweed-salad-concept-400.avif" 
+                          type="image/avif">
+                  <source srcset="../img-opt/delicious-ramen-with-seaweed-salad-concept-400.webp" 
+                          type="image/webp">
+                  
+                  <img src="../img-opt/delicious-ramen-with-seaweed-salad-concept.jpg" 
+                        alt="A bowl of ramen with seaweed salad" 
+                        width="1200" 
+                        height="1200"
+                        loading="lazy">
+                </picture>
+              </a>
+              <figcaption>Asian</figcaption>
+            </figure>
+          </div>
+
+        <div class="category-container">
+          <figure>
+            <a href="maintenance.html" class="category-path">
+              <picture>                  
+                  <source srcset="../img-opt/spaghetti-meatball-topped-with-parmesan-basil-food-400.avif" 
+                          type="image/avif">
+                  <source srcset="../img-opt/spaghetti-meatball-topped-with-parmesan-basil-food-400.webp" 
+                          type="image/webp">
+                  <img src="../img-opt/spaghetti-meatball-topped-with-parmesan-basil-food.jpg" 
+                      alt="A plate of spaghetti and meatballs"
+                      width="1200" 
+                      height="1200"
+                      loading="lazy">
+              </picture>
+            </a>
+            <figcaption>Pasta</figcaption>
+          </figure>
+        </div>
+        <div class="category-container">
+          <figure>
+            <a href="maintenance.html" class="category-path">
+              <picture>                  
+                  <source srcset="../img-opt/mk-s-wBC1LR-W2aY-unsplash-400.avif" 
+                          type="image/avif">
+                  <source srcset="../img-opt/mk-s-wBC1LR-W2aY-unsplash-400.webp" 
+                          type="image/webp">
+                  <img src="../img-opt/mk-s-wBC1LR-W2aY-unsplash.jpg" 
+                      alt="A salad plate with fresh cheese" 
+                      width="1200"
+                      height="1200"
+                      loading="lazy">
+              </picture>
+            </a>
+            <figcaption>Salads</figcaption>
+          </figure>
+        </div>
+        <div class="category-container">
+          <figure>
+            <a href="maintenance.html" class="category-path">
+              <picture>                  
+                  <source srcset="../img-opt/david-foodphototasty-Sekm9_nC2BM-unsplash-400.avif" 
+                          type="image/avif">
+                  <source srcset="../img-opt/david-foodphototasty-Sekm9_nC2BM-unsplash-400.webp" 
+                          type="image/webp">
+                  <img src="../img-opt/david-foodphototasty-Sekm9_nC2BM-unsplash.jpg" 
+                      alt="A bowl of poke with salmon, avocado, and rice" 
+                      width="1200"
+                      height="1200"
+                      loading="lazy">
+              </picture>
+            </a>
+            <figcaption>Poké Bowl</figcaption>
+          </figure>
+        </div>
+        <div class="category-container">
+          <figure>
+            <a href="maintenance.html" class="category-path">
+              <picture>                  
+                  <source srcset="../img-opt/recipe2-400.avif" 
+                          type="image/avif">
+                  <source srcset="../img-opt/recipe2-400.webp" 
+                          type="image/webp">
+                  <img src="../img-opt/recipe2.jpg" 
+                      alt="A bowl of rich tomato soup, swirled with cream and garnished with fresh parsley"
+                      width="800"
+                      height="533" 
+                      loading="lazy">
+              </picture>
+            </a>
+            <figcaption>Soups</figcaption>
+          </figure>
+        </div>
+        </div>
+  </section>    
+
+  <section class="container recipes">
+      
+      <h2 class="index-tagline">ARE YOU READY TO STIR UP SOMETHING AMAZING?</h2>
+        <div class="container">
+          <div class="card-container">
+      
+            <article class="card-preview">
+              <div class="img-container">
+                <picture>                  
+                  <source srcset="../img-opt/recipe2.avif 800w" 
+                           type="image/avif" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <source srcset="../img-opt/recipe2.webp 800w" 
+                           type="image/webp" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <img src="../img-opt/recipe2.jpg" 
+                           alt="A bowl of rich tomato soup, swirled with cream and garnished with fresh parsley." 
+                           loading="lazy">
+                </picture>
+               
+              </div>
+              <div class="text-container">
+                <h3>Tomato Soup</h3>
+                <p>The BEST tomato soup recipe! It's rich, flavorful, and made with pantry ingredients. Pair it with a grilled cheese for a delicious, comforting meal!
+                </p>
+                <a href="tomato-soup.html" title="Read the full recipe for Tomato Soup" aria-label="Read more about the Tomato Soup recipe">Read More</a>
+              </div>
+            </article>
+      
+            <article class="card-preview">
+              <div class="img-container">
+                <picture>                  
+                  <source srcset="../img-opt/recipe3.avif 800w" 
+                           type="image/avif" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <source srcset="../img-opt/recipe3.webp 800w" 
+                           type="image/webp" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <img src="../img-opt/recipe3.jpg" 
+                        alt="A stack of fluffy pancakes drizzled with syrup, topped with fresh blueberries and strawberries." 
+                        loading="lazy">
+                </picture>
+              </div>
+              <div class="text-container">
+                <h3>Pancakes</h3>
+                <p>Oat Milk Pancakes are a thick and fluffy dairy free pancake recipe that is so easy to make. These pancakes are made in 1 bowl with only 8 ingredients, making them a quick and wholesome breakfast or brunch for any day of the week.
+                </p>
+                <a href="maintenance.html" aria-label="Read more about Pancakes recipe">Read More</a>
+              </div>
+            </article>
+      
+            <article class="card-preview">
+              <div class="img-container">
+                <picture>                  
+                  <source srcset="../img-opt/recipe4.avif 800w" 
+                           type="image/avif" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <source srcset="../img-opt/recipe4.webp 800w" 
+                           type="image/webp" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <img src="../img-opt/recipe4.jpg" 
+                           alt="A steaming bowl of Vietnamese Phô with fresh herbs, lime, and sliced beef." 
+                           loading="lazy">
+                </picture>
+              </div>
+              <div class="text-container">
+                <h3>Vietnamese Phô</h3>
+                <p>Experience the magic of one of the greatest noodle soups in the world with this easy to follow traditional Vietnamese Pho recipe! The soup is utterly addictive and every spoonful leaves you wanting more!
+                </p>
+                <a href="maintenance.html" aria-label="Read more about Vietnamese Phô recipe">Read More</a>
+              </div>
+            </article>
+      
+            <article class="card-preview">
+              <div class="img-container">
+                <picture>                  
+                  <source srcset="../img-opt/recipe5.avif 800w" 
+                           type="image/avif" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <source srcset="../img-opt/recipe5.webp 800w" 
+                           type="image/webp" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <img src="../img-opt/recipe5.jpg" 
+                           alt="A freshly baked chicken pizza topped with melted cheese chunks, tomato sauce, and herbs." 
+                           loading="lazy">
+                </picture>
+              </div>
+              <div class="text-container">
+                <h3>BBQ Chicken Tortilla Pizza</h3>
+                <p>Kiiiinda shook by how good this lunch was. If you don’t have a lot of time to cook yourself a meal, I cannot recommend making this 10 MINUTE BBQ CHICKEN TORTILLA PIZZA enough. It seriously hit the spot!
+                </p>
+                <a href="maintenance.html" aria-label="Read more about the Chicken Pizza recipe">Read More</a>
+              </div>
+            </article>
+      
+            <article class="card-preview">
+              <div class="img-container">
+                <picture>                  
+                  <source srcset="../img-opt/recipe6.avif 800w" 
+                           type="image/avif" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <source srcset="../img-opt/recipe6.webp 800w" 
+                           type="image/webp" 
+                           sizes="(min-width: 767px) 800px, 100vw">
+                  <img src="../img-opt/recipe6.jpg" 
+                           alt="A breakfast toast with fluffy scrambled eggs." 
+                           loading="lazy">
+                </picture>
+              </div>
+              <div class="text-container">
+                <h3>Scrambled Eggs</h3>
+                <p>Wanna make a killer breakfast? A pile of soft, luscious scrambled eggs on thick toast is pretty impressive.
+                </p>
+                <a href="maintenance.html" aria-label="Read more about the scrambled eggs recipe">Read More</a>
+              </div>
+            </article>
+          </div>
+    
+        </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-logo">
+          <figure>
+                <img src="../img-opt/logo-343.png" 
+                     srcset="../img-opt/logo-343.png 343w, ../img-opt/logo-1029.png 1029w"
+                     sizes="336px"                     
+                     width="1029" 
+                     height="245"
+                     alt="Logotipo de Kitchenette">
+          </figure>
+    </div>
+
+    <nav class="footer-nav">
+
+        <div class="footer-links-about">
+            <ul>
+                <li><a href="maintenance.html">Privacy Policy</a></li>
+                <li><a href="maintenance.html">Terms and Conditions</a></li>
+            </ul>
+            <p>2024-2025 Alba Diaz Romero | &copy; All Rights Reserved</p>
+        </div>
+
+    </nav>   
+
+</footer>
+
+  </body>
+</html>

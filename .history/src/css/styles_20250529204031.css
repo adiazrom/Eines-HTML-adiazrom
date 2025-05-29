@@ -75,10 +75,7 @@ aside h1 {
     font-size: 2.3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-weight: 700;
 }
-
-
 
 h2 {
     font-size: 1.5rem;
@@ -123,7 +120,6 @@ h2.index-tagline, h2.tagline {
    font-size: 1.2rem;
    font-weight: 700;
    text-align: center;
-   margin: 1rem;
 }
 
 a {
