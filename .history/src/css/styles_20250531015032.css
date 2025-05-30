@@ -504,7 +504,7 @@ figure.recipe-page-hero {
     overflow: hidden;
 }
 
-figure.recipe-page-hero img {
+figure.recipe-page-img img {
     width: 100%;
     height: auto;
     object-fit: cover;

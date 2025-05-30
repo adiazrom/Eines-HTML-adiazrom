@@ -486,7 +486,6 @@ figure {
 
 figure.recipe-page-img {
     padding-bottom: 1rem;
-    max-width: 100%;
     overflow: hidden;
 }
 
@@ -498,19 +497,6 @@ figure.recipe-page-img img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-figure.recipe-page-hero {
-    padding-bottom: 1rem;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-figure.recipe-page-hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 .recipe-page-img cite {
     font-size: 0.75rem;
 }
