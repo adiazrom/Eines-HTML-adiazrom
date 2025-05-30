@@ -207,7 +207,7 @@ a:hover {
 .wave {
     position:relative;
     width: 100%;
-    height: 2rem;
+    height: 50px;
     will-change: transform;
 
 }
