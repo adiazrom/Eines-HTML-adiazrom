@@ -1,0 +1,11 @@
+# Cachea imágenes optimizadas por 1 año
+/img-opt/*
+  Cache-Control: max-age=31536000, immutable
+
+# Cachea fuentes por 1 año
+/src/fonts/*
+  Cache-Control: max-age=31536000, immutable
+
+# Cachea archivos woff2 por 1 año (en cualquier ruta)
+*.woff2
+  Cache-Control: max-age=31536000, immutable
