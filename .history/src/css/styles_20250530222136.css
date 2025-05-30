@@ -435,7 +435,7 @@ section.categories {
     gap: 2rem;
     justify-content: center;
     align-items: stretch;
-    min-height: 16rem;
+    min-height: 300px;
 }
 
 .card-preview {
@@ -450,7 +450,7 @@ section.categories {
   
 .img-container {
     width: 100%;
-    height: 16rem;
+    height: 15rem;
     aspect-ratio: 16 / 9; /* maintains image ratio on mobile */
     flex-shrink: 0; /* prevents shrinking in flex */
 }
