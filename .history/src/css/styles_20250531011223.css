@@ -107,6 +107,7 @@ a:focus {
 .container {
     width: 95%;
     margin: 0 auto;
+    height: auto;
 }
 
 /**************************** Header *****************************/
@@ -514,6 +515,7 @@ figure.recipe-page-img img {
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    font-family: 'Nunito', sans-serif;
     cursor: pointer;
   }
 

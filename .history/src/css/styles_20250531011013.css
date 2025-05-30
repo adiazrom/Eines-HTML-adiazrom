@@ -107,6 +107,7 @@ a:focus {
 .container {
     width: 95%;
     margin: 0 auto;
+    height: auto;
 }
 
 /**************************** Header *****************************/
@@ -242,7 +243,7 @@ a:focus {
          margin: 0 auto;
     }
 
-    .footer p {
+    footer p {
         color: var(--dark-color);
         font-size: 0.7rem;
         margin: 0;
@@ -496,10 +497,6 @@ figure.recipe-page-img img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.recipe-page-img cite {
-    font-size: 0.75rem;
-}
-
 .ingredients-list {
     list-style: none;
     padding: 0;
@@ -514,6 +511,7 @@ figure.recipe-page-img img {
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    font-family: 'Nunito', sans-serif;
     cursor: pointer;
   }
 
@@ -552,6 +550,19 @@ figure.recipe-page-img img {
     font-size: 0.9rem;
     font-weight: bold;
 } 
+
+
+.recipe-page-img img {
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 50%;
+}
+
+.recipe-page-img cite {
+    font-size: 0.75rem;
+}
 
 
 .video-container {
