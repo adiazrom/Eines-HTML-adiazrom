@@ -521,6 +521,7 @@ section.categories {
 
 figure.recipe-page-img {
     padding-bottom: 1rem;
+    aspect-ratio: 16 / 9;
     max-width: 100%;
     overflow: hidden;
 }
