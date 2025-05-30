@@ -205,8 +205,6 @@ a:hover {
   line-height: 0;
   overflow: hidden;
   position: relative;
-  contain: layout paint;
-
 }
 
 .wave {
@@ -219,10 +217,9 @@ a:hover {
   /* Animation */
   
 .parallaxwave > use {
-   animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
-   will-change: transform;
-   transform: translate3d(0, 0, 0);
-   }
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+    will-change: transform;
+  }
   
   .parallaxwave > use:nth-child(1) {
     animation-delay: -2s;
