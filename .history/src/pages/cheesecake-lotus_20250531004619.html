@@ -57,7 +57,7 @@
 <main class="container">
     <h1>Cheesecake with Lotus Cookies</h1>
 
-    <div class="recipe-page-container">
+    <div>
       <figure class="recipe-page-img">
         <picture>
           <source srcset="/src/img-opt/featured1-400.avif"
@@ -71,51 +71,56 @@
                fetchpriority="high">
         </picture>
       </figure>
-      <figure class="recipe-page-img">
-         <picture>
-            <source srcset="/src/img-opt/cookie-butter-cheesecake-ingredients-400.avif"
-            type="image/avif">
-            <source srcset="/src/img-opt/cookie-butter-cheesecake-ingredients-400.webp"
-            type="image/webp">
-            <img src="/src/img-opt/cookie-butter-cheesecake-ingredients.jpg"
-            srcset="/src/img-opt/cookie-butter-cheesecake-ingredients.jpg"
-            alt="A collection of cheesecake ingredients: cream cheese, sugar, eggs, graham crackers, butter, and vanilla extract."
-            width="400"
-            height="500"
-            loading="lazy">
-         </picture>
-         <cite>
-            Andres, N. (2024, March 26). <a href="https://www.kneadsomesweets.com/cookie-butter-cheesecake/">Cookie butter cheesecake.</a>Knead Some Sweets.
-         </cite>
-      </figure>
-      
       <section class="ingredients">
-         <header><h2>INGREDIENTS</h2></header>
-         <ul class="ingredients-list">
-            <li>
-               <label for="biscoff-cookies"><input type="checkbox" id="biscoff-cookies"><strong>Biscoff Cookies</strong></label>
-               <p>You will need just under 1 full sleeve of Biscoff cookies crushed up to make 2 ¼ cups of crushed cookies.</p>
-            </li>
-            <li>
-               <label for="butter"><input type="checkbox" id="butter"><strong>Melted Butter</strong></label>
-               <p>Using salted butter gives a pleasant sweet/salty balance but unsalted may be used instead.</p>
-            </li>
-            <li>
-               <label for="cream-cheese"><input type="checkbox" id="cream-cheese"><strong>Cream Cheese</strong></label>
-               <p>The cream cheese must be softened to room temperature to be able to blend into a smooth cheesecake batter.</p>
-            </li>
-            <li>
-               <label for="cookie-butter"><input type="checkbox" id="cookie-butter"><strong>Cookie Butter</strong></label>
-               <p>I have made this cheesecake with Lotus brand cookie butter and with store brand cookie butter before and have found that the Lotus brand has an overall better texture and flavor.</p>
-            </li>
-            <li>
-               <label for="cinnamon"><input type="checkbox" id="cinnamon"><strong>Cinnamon</strong></label>
-               <p>Just ½ teaspoon of cinnamon amplifies the speculoos flavor alongside the cookie butter and crushed cookie crust in this cheesecake.</p>
-            </li>
-         </ul>
-      </div>
+               <header><h2>INGREDIENTS</h2></header>
 
-    <div class="recipe-page-container">
+               <figure class="recipe-page-img">
+                  <picture>
+                     <source 
+                        srcset="
+                           /src/img-opt/cookie-butter-cheesecake-ingredients-400.avif"
+                        type="image/avif">
+                     <source 
+                        srcset="
+                           /src/img-opt/cookie-butter-cheesecake-ingredients-400.webp"
+                        type="image/webp">
+                     <img 
+                        src="/src/img-opt/cookie-butter-cheesecake-ingredients.jpg"
+                        srcset="
+                           /src/img-opt/cookie-butter-cheesecake-ingredients.jpg"
+                        alt="A collection of cheesecake ingredients: cream cheese, sugar, eggs, graham crackers, butter, and vanilla extract."
+                        width="400"
+                        height="500"
+                        loading="lazy">
+                  </picture>
+               
+                  <cite>
+                  Andres, N. (2024, March 26). <a href="https://www.kneadsomesweets.com/cookie-butter-cheesecake/">Cookie butter cheesecake.</a>Knead Some Sweets.
+                  </cite>
+               </figure>
+
+               <ul class="ingredients-list">
+                  <li>
+                  <label for="biscoff-cookies"><input type="checkbox" id="biscoff-cookies"><strong>Biscoff Cookies</strong></label>
+                  <p>You will need just under 1 full sleeve of Biscoff cookies crushed up to make 2 ¼ cups of crushed cookies.</p>
+                  </li>
+                  <li>
+                  <label for="butter"><input type="checkbox" id="butter"><strong>Melted Butter</strong></label>
+                  <p>Using salted butter gives a pleasant sweet/salty balance but unsalted may be used instead.</p>
+                  </li>
+                  <li>
+                  <label for="cream-cheese"><input type="checkbox" id="cream-cheese"><strong>Cream Cheese</strong></label>
+                  <p>The cream cheese must be softened to room temperature to be able to blend into a smooth cheesecake batter.</p>
+                  </li>
+                  <li>
+                  <label for="cookie-butter"><input type="checkbox" id="cookie-butter"><strong>Cookie Butter</strong></label>
+                  <p>I have made this cheesecake with Lotus brand cookie butter and with store brand cookie butter before and have found that the Lotus brand has an overall better texture and flavor.</p>
+                  </li>
+                  <li>
+                  <label for="cinnamon"><input type="checkbox" id="cinnamon"><strong>Cinnamon</strong></label>
+                  <p>Just ½ teaspoon of cinnamon amplifies the speculoos flavor alongside the cookie butter and crushed cookie crust in this cheesecake.</p>
+                  </li>
+               </ul>
 
                <figure class="recipe-page-img">
                   <picture>              
@@ -135,6 +140,10 @@
                   </cite>
                </figure>
             </section>
+    </div>
+
+      <div class="recipe-page-container">
+            
 
       <section class="instructions">
          <header><h2>INSTRUCTIONS</h2></header>

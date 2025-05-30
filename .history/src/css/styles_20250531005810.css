@@ -60,20 +60,29 @@ aside h1 {
     margin-bottom: 2rem;
 }
 
+
+
 h2 {
     font-size: 1.5rem;
     margin-top: 0.51rem;
     margin-bottom: 2rem;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 h3 {
     font-size: 1.1rem;
     margin: 0.5rem 0;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 p, li {
     font-size: 1rem;
     line-height: 1.5;
+}
+
+p.lexend-deca-bold {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .tagline {
@@ -90,8 +99,7 @@ a {
     min-height: 2.75rem;
 }
 
-a:hover,
-a:focus {
+a:hover {
     color: var(--dark-color);
 }
 
@@ -363,8 +371,10 @@ section.categories {
   
   .category-container {
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensure padding and margin are included in the width */
+    font-family: "Lexend Deca", sans-serif;
     font-weight: 700;
+    font-style: normal;
     width: auto;
     height: auto;
   }
@@ -379,10 +389,10 @@ section.categories {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* removes underline from figcaption */
+    color: inherit; /* ensures link doesn't change text color */
     gap: 1rem;
-    line-height: 0;
+    line-height: 0; /* removes extra inline spacing */
   }
   
   .category-path img {
@@ -394,7 +404,7 @@ section.categories {
   }
   
   .category-path img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* optional hover effect */
   }
   
   .category-path figcaption {
@@ -411,7 +421,7 @@ section.categories {
    justify-content: center;
    align-items: stretch;
    min-height: 16rem;
-   grid-template-columns: 1fr;
+   grid-template-columns: 1fr; /* 1 columna por defecto */
 }
 
 .card-preview {
@@ -419,23 +429,24 @@ section.categories {
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* mobile: stacked layout */
     overflow: hidden;
     margin-bottom: 1rem;
-    min-height: 30vh;
+    min-height: 600px;
 }
   
 .img-container {
     width: 100%;
     height: 16rem;
-    aspect-ratio: 16 / 9; 
-    flex-shrink: 0; 
+    aspect-ratio: 16 / 9; /* maintains image ratio on mobile */
+    flex-shrink: 0; /* prevents shrinking in flex */
 }
   
 .img-container picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /*border-radius: 0.5rem;*/
     display: block;
 }
   
@@ -449,13 +460,13 @@ section.categories {
 
 /**************************** Detailed page *****************************/
 
-.ingredients, .instructions {
-    line-height: 1.5;
-}
-
 .ingredients h2, .instructions h2 {
     text-align: left;
     margin: 1rem 0;
+}
+
+.ingredients, .instructions {
+    line-height: 1.5;
 }
 
 .ingredients ul li, .instructions ol li {
@@ -698,7 +709,7 @@ figure.recipe-page-img img {
 /**************************** Media query for medium devices *****************************/
 @media (min-width: 768px) {
       .featured-container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr); /* dues columnes */
   }
       .header-logo {
        padding-left: 3rem;
@@ -717,7 +728,7 @@ figure.recipe-page-img img {
     }
 
     .top-nav.active {
-        display: flex
+        display: flex; /* ensure it's always visible on desktop */
     }
 
     .top-nav ul li a:hover,
@@ -727,8 +738,8 @@ figure.recipe-page-img img {
 
     .img-container {
         width: 43%;
-        height: 100%;
-        aspect-ratio: auto;
+        height: 100%; /* fills height of .card-preview */
+        aspect-ratio: auto; /* disables aspect ratio on desktop, since height is controlled */
       }
 
     .img-container picture img {
@@ -823,7 +834,7 @@ figure.recipe-page-img img {
     }
     .card-preview {
         flex-direction: row;
-        height: 18rem; 
+        height: 18rem; /* or adjust to what fits your design */
       }
 
            
@@ -850,8 +861,8 @@ figure.recipe-page-img img {
 
     .footer-links {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: row; /* Make the footer links display in a row */
+        justify-content: flex-start; /* Align links to the left */
         padding-top: 1rem;
     }
 
@@ -860,12 +871,12 @@ figure.recipe-page-img img {
     }
 
     .footer-links-about ul {
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the left */
     }
 
     .footer-links-about li {
-        margin: 0.5rem 0;
+        margin: 0.5rem 0; /* Adjust spacing for vertical layout */
     }   
 }    
 
@@ -873,7 +884,7 @@ figure.recipe-page-img img {
 @media (min-width: 1024px) {
    /************** Container **************/
   .card-container {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en escritorio */
   }
     .featured-text p {
         font-size: 1.3rem;

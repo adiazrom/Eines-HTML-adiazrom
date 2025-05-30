@@ -422,7 +422,7 @@ section.categories {
     flex-direction: column;
     overflow: hidden;
     margin-bottom: 1rem;
-    min-height: 30vh;
+    min-height: 26vh;
 }
   
 .img-container {
@@ -449,13 +449,13 @@ section.categories {
 
 /**************************** Detailed page *****************************/
 
-.ingredients, .instructions {
-    line-height: 1.5;
-}
-
 .ingredients h2, .instructions h2 {
     text-align: left;
     margin: 1rem 0;
+}
+
+.ingredients, .instructions {
+    line-height: 1.5;
 }
 
 .ingredients ul li, .instructions ol li {
