@@ -154,7 +154,7 @@ a:hover {
     padding: 1rem 0;
     width: 100%;
     text-align: center;
-    min-height: 100px;
+    min-height: 100px; /* o lo que mida realmente */
 
 }
 
