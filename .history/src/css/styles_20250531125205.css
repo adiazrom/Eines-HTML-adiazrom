@@ -160,24 +160,27 @@ a:focus {
 /***************************** SVG Divider *****************************/
 .wavebox {
   position: relative;
-  width: 100%;
-  height: 2rem;
+  width: 100vw;
   overflow: hidden;
+  height: 2rem;
   line-height: 0;
   margin: 0;
   padding: 0;
+  contain: layout style;
 }
 
 .wave {
-  position: absolute; /* crucial to isolate it */
-  top: 0;
-  left: 0;
   width: 200%;
-  height: 100%;
+  height: 2rem;
   display: block;
+}
 
+.waveGroup {
   animation: move-forever-1 10s linear infinite;
+  transform: translate3d(0, 0, 0);
   will-change: transform;
+  transform-box: fill-box;
+  transform-origin: 0 0;
 }
 
 @keyframes move-forever-1 {
@@ -185,9 +188,11 @@ a:focus {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-1440px);
   }
 }
+
+
 /**************************** Footer *********************************/
 .footer {
         width: 100%;
