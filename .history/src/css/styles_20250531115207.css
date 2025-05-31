@@ -165,13 +165,13 @@ a:focus {
 }
 
 .wavebox {
+  width: 100%; 
   overflow: hidden;
   position: relative;
   line-height: 0;
 }
 
 .wave {
-  width: 100%; 
   display: block;
 }
 
