@@ -659,6 +659,7 @@ figure.recipe-page-hero img {
   .pagination .active {
     background-color: var(--main-color);
     color: var(--light-color);
+    /*float: left;*/
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
