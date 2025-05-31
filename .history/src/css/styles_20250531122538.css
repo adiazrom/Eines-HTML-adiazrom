@@ -177,7 +177,6 @@ a:focus {
   transform: translate3d(0, 0, 0);
   will-change: transform;
   transform-box: fill-box;
-  transform-origin: 0 0;
 }
 
 @keyframes move-forever-1 {

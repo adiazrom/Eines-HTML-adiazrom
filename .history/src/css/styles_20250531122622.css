@@ -173,7 +173,7 @@ a:focus {
   preserveAspectRatio: none;
 }
 .waveGroup {
-  animation: move-forever-1 10s linear infinite;
+  animation: slideLeft 30s linear infinite;
   transform: translate3d(0, 0, 0);
   will-change: transform;
   transform-box: fill-box;

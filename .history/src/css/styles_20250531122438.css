@@ -170,14 +170,11 @@ a:focus {
   width: 100vw;
   height: 2rem;
   display: block;
-  preserveAspectRatio: none;
 }
 .waveGroup {
   animation: move-forever-1 10s linear infinite;
   transform: translate3d(0, 0, 0);
   will-change: transform;
-  transform-box: fill-box;
-  transform-origin: 0 0;
 }
 
 @keyframes move-forever-1 {
