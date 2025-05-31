@@ -78,7 +78,6 @@ p, li {
    font-weight: 700;
    text-align: center;
    margin: 1rem;
-   padding-top: 3rem;
 }
 
 a {
@@ -553,9 +552,7 @@ figure.recipe-page-hero img {
 
 
 .video-container {
-    max-width: 65%;
-    margin: auto;
-    
+    max-width: 85%;
   }
 
    .video-wrapper {

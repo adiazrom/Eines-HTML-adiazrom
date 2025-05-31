@@ -57,20 +57,25 @@
 <main class="container">
     <h1>Cheesecake with Lotus Cookies</h1>
 
-      <figure class="recipe-page-hero">
-        <picture>
-          <source srcset="/src/img-opt/featured1-400.avif"
-                  type="image/avif">
-          <source srcset="/src/img-opt/featured1-400.webp"
-                  type="image/webp">
-          <img src="/src/img/featured1.jpg" 
-               alt="A creamy slice of Lotus Biscoff cheesecake with a caramelized cookie crust"
-               width="800"
-               height="600"
-               fetchpriority="high">
-        </picture>
-      </figure>
-      
+      <div class="recipe-page-container">
+
+         <p>This incredibly luscious and creamy Biscoff cheesecake with a crunchy speculoos cookie crust is exactly what you never knew you needed. It's such a different flavor from what you commonly see in desserts.</p>
+                  <figure class="recipe-page-hero">
+           <picture>
+             <source srcset="/src/img-opt/featured1-400.avif"
+                     type="image/avif">
+             <source srcset="/src/img-opt/featured1-400.webp"
+                     type="image/webp">
+             <img src="/src/img/featured1.jpg" 
+                  alt="A creamy slice of Lotus Biscoff cheesecake with a caramelized cookie crust"
+                  width="800"
+                  height="600"
+                  fetchpriority="high">
+           </picture>
+         </figure>
+      </div>
+
+
       <section class="ingredients">
          <header><h2>INGREDIENTS</h2></header>
       <div class="recipe-page-container">
@@ -95,6 +100,7 @@
          
          
          <ul class="ingredients-list">
+            
             <li>
                <label for="biscoff-cookies"><input type="checkbox" id="biscoff-cookies"><strong>Biscoff Cookies</strong></label>
                <p>You will need just under 1 full sleeve of Biscoff cookies crushed up to make 2 ¼ cups of crushed cookies.</p>
@@ -114,18 +120,34 @@
             <li>
                <label for="cinnamon"><input type="checkbox" id="cinnamon"><strong>Cinnamon</strong></label>
                <p>Just ½ teaspoon of cinnamon amplifies the speculoos flavor alongside the cookie butter and crushed cookie crust in this cheesecake.</p>
-            </li>         
-        </ul>
-
+            </li>
+         </ul>
+         
+      </div>
 </section>
 
-      </div>
 <section class="instructions">
             <header><h2>INSTRUCTIONS</h2></header>
             <div class="recipe-page-container">
 
-            <ol>
+            <figure class="recipe-page-img">
+                  <picture>              
+                  <source srcset="/src/img-opt/cookie-butter-cheesecake-10-400.avif" 
+                           type="image/avif">
+                  <source srcset="/src/img-opt/cookie-butter-cheesecake-10-400.webp" 
+                           type="image/webp">
+                  <img src="/src/img-opt/cookie-butter-cheesecake-10.jpg" 
+                        alt="A creamy cheesecake served on a plate and sliced."
+                        width="400"
+                        height="400"
+                        loading="lazy">
+                  </picture>
                
+                  <cite>
+                  Andres, N. (2024, March 26). <a href="https://www.kneadsomesweets.com/cookie-butter-cheesecake/">Cookie butter cheesecake.</a>Knead Some Sweets.
+                  </cite>
+               </figure> 
+            <ol>
                <li>
                <p><span class="step-number">1</span> Stir together the crushed Biscoff cookies and melted butter until combined.</p>
                </li>
@@ -144,27 +166,9 @@
                <li>
                <p><span class="step-number">6</span> Smooth out on top of the prepared crust in the pan.</p>
                </li>
-               
-               <p>Chill the assembled cheesecake for at least 4 hours before serving. Remove from the springform pan, remove the wax paper, slice, and serve with a drizzle of melted cookie butter and whipped cream if desired.</p>           
-            </ol>
-                           <figure class="recipe-page-img">
-                  <picture>              
-                  <source srcset="/src/img-opt/cookie-butter-cheesecake-10-400.avif" 
-                           type="image/avif">
-                  <source srcset="/src/img-opt/cookie-butter-cheesecake-10-400.webp" 
-                           type="image/webp">
-                  <img src="/src/img-opt/cookie-butter-cheesecake-10.jpg" 
-                        alt="A creamy cheesecake served on a plate and sliced."
-                        width="400"
-                        height="400"
-                        loading="lazy">
-                  </picture>
-                  <cite>
-                  Andres, N. (2024, March 26). <a href="https://www.kneadsomesweets.com/cookie-butter-cheesecake/">Cookie butter cheesecake.</a>Knead Some Sweets.
-                  </cite>
-               </figure> 
-   </div>
-                  <p class="tagline">ARE YOU A VISUAL PERSON? HOW ABOUT A VIDEO?</p>
+               <p>Chill the assembled cheesecake for at least 4 hours before serving. Remove from the springform pan, remove the wax paper, slice, and serve with a drizzle of melted cookie butter and whipped cream if desired.</p>
+
+               <p class="tagline">ARE YOU A VISUAL PERSON? HOW ABOUT A VIDEO?</p>
 
                <figure class="video-container">
                   <div class="video-wrapper">
@@ -180,8 +184,15 @@
                   <cite>
                      Nomnomdayss. (2025, March 29). <a href="https://www.youtube.com/watch?v=9XuJifwj5qc">Biscoff Cheesecake | Smooth and creamy texture you’ll love!</a> [Video]. YouTube.
                   </cite>
-               </figure>     
-</section>   
+               </figure>               
+            </ol>
+</div> 
+               
+   
+   
+
+</section>
+
 </main>
 
 <footer class="footer">

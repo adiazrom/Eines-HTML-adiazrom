@@ -78,7 +78,6 @@ p, li {
    font-weight: 700;
    text-align: center;
    margin: 1rem;
-   padding-top: 3rem;
 }
 
 a {
@@ -480,10 +479,9 @@ figure.recipe-page-img img {
 
 figure.recipe-page-hero {
     padding-bottom: 1rem;
-    max-width: 65%;
+    max-width: 95%;
     overflow: hidden;
     aspect-ratio: 4 / 3;
-    margin: 0 auto;
 }
 
 figure.recipe-page-hero img {
@@ -493,7 +491,6 @@ figure.recipe-page-hero img {
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 .recipe-page-img cite {
     font-size: 0.75rem;
 }
@@ -553,9 +550,7 @@ figure.recipe-page-hero img {
 
 
 .video-container {
-    max-width: 65%;
-    margin: auto;
-    
+    max-width: 100%;
   }
 
    .video-wrapper {
