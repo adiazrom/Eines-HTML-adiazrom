@@ -413,7 +413,7 @@ section.categories {
     flex-direction: column;
     overflow: hidden;
     margin-bottom: 1rem;
-    min-height: 22rem;
+    min-height: 20rem;
 }
   
 .img-container {
@@ -429,6 +429,7 @@ section.categories {
     height: 100%;
     object-fit: cover;
     display: block;
+    aspect-ratio: 16 / 9;
 }
   
 .text-container {
