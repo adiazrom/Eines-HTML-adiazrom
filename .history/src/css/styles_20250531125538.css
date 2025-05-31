@@ -39,7 +39,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 h1, h2, h3 {
@@ -167,7 +166,7 @@ a:focus {
   line-height: 0;
   margin: 0;
   padding: 0;
-  
+  contain: layout style;
 }
 
 .wave {
@@ -186,10 +185,10 @@ a:focus {
 
 @keyframes move-forever-1 {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
   100% {
-    transform: translate3d(-1440px, 0, 0);
+    transform: translateX(-1440px);
   }
 }
 

@@ -39,7 +39,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 h1, h2, h3 {
@@ -167,16 +166,14 @@ a:focus {
   line-height: 0;
   margin: 0;
   padding: 0;
-  
+  contain: layout style;
 }
 
 .wave {
-  width: 200%;
+  /*width: 200%;*/
   height: 2rem;
   display: block;
-}
 
-.waveGroup {
   animation: move-forever-1 10s linear infinite;
   transform: translate3d(0, 0, 0);
   will-change: transform;
@@ -186,10 +183,10 @@ a:focus {
 
 @keyframes move-forever-1 {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
   100% {
-    transform: translate3d(-1440px, 0, 0);
+    transform: translateX(-1440px);
   }
 }
 
