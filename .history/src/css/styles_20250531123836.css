@@ -391,6 +391,8 @@ section.categories {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-bottom: 1rem;
+    min-height: 22rem;
 }
   
 .img-container {

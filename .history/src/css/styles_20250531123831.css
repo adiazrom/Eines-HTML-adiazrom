@@ -391,13 +391,15 @@ section.categories {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-bottom: 1rem;
+    min-height: 22rem;
 }
   
 .img-container {
     width: 100%;
-    aspect-ratio: 4 / 3; 
+    /*height: 16rem;*/
     flex-shrink: 0; 
-
+    padding-bottom: 75%;
 }
 
 .img-container picture,

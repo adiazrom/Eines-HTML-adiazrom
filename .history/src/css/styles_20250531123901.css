@@ -391,6 +391,7 @@ section.categories {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    min-height: 20rem;
 }
   
 .img-container {
@@ -401,10 +402,13 @@ section.categories {
 }
 
 .img-container picture,
-.img-container picture img {
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
   
 .text-container {

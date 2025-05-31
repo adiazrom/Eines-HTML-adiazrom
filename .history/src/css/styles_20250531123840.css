@@ -377,7 +377,6 @@ section.categories {
 .card-container {
    width: 100%;
    display: grid;
-   gap: 2rem;
    justify-content: center;
    align-items: stretch;
    min-height: 16rem;
@@ -391,6 +390,8 @@ section.categories {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-bottom: 1rem;
+    min-height: 22rem;
 }
   
 .img-container {
