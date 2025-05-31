@@ -42,10 +42,21 @@
     </header>
 
 <div class="wavebox">
-  <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-
+  <svg class="wave"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 352 44"
+       preserveAspectRatio="none"
+       aria-hidden="true">
     <defs>
-      <path id="onda" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
+      <path id="onda" d="
+        M0 20
+        c30 0 58 10 88 10
+        s58-10 88-10
+        58 10 88 10
+        58-10 88-10
+        v44
+        h-352
+        Z" />
     </defs>
     <g class="parallaxwave parallaxwave-1">
       <use xlink:href="#onda" x="0" y="0" fill="#C3E18E" />

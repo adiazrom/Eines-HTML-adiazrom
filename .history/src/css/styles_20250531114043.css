@@ -157,6 +157,7 @@ a:focus {
 }
 
 /***************************** SVG Divider *****************************/
+
 .wavebox {
   width: 100%;
   height: 2rem;
@@ -171,30 +172,30 @@ a:focus {
   display: block;
 }
 
-.parallaxwave use {
-  transform: translate3d(0, 0, 0);
+.parallaxwave > use {
+  animation: none !important; /* baseline; override with class */
   will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
 
-.parallaxwave-1 use {
+.parallaxwave-1 {
   animation: move-forever-1 5s cubic-bezier(.55,.5,.45,.5) infinite;
   animation-delay: -2s;
 }
-
-.parallaxwave-2 use {
+.parallaxwave-2 {
   animation: move-forever-2 8s cubic-bezier(.55,.5,.45,.5) infinite;
   animation-delay: -3s;
 }
 
 @keyframes move-forever-1 {
-  0%   { transform: translate3d(-88px, 0, 0); }
-  50%  { transform: translate3d(-44px, 0, 0); }
+  0%   { transform: translate3d(-160px, 0, 0); }
+  50%  { transform: translate3d(-80px, 0, 0); }
   100% { transform: translate3d(0px, 0, 0); }
 }
 
 @keyframes move-forever-2 {
-  0%   { transform: translate3d(-88px, 0, 0); }
-  50%  { transform: translate3d(-44px, 0, 0); }
+  0%   { transform: translate3d(-160px, 0, 0); }
+  50%  { transform: translate3d(-80px, 0, 0); }
   100% { transform: translate3d(0px, 0, 0); }
 }
 

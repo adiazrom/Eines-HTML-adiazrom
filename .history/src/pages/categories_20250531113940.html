@@ -41,20 +41,27 @@
       </div>
     </header>
 
-<div class="wavebox">
-  <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+   <div class="wavebox">
+   <svg class="wave"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 0 150 44"  <!-- match real height -->
+         preserveAspectRatio="none"
+         shape-rendering="auto"
+         aria-hidden="true">
+         
+      <defs>
+         <path id="onda" d="M-160 20c30 0 58 10 88 10s58-10 88-10 58 10 88 10 58-10 88-10v44h-352Z" />
+      </defs>
 
-    <defs>
-      <path id="onda" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
-    </defs>
-    <g class="parallaxwave parallaxwave-1">
-      <use xlink:href="#onda" x="0" y="0" fill="#C3E18E" />
-    </g>
-    <g class="parallaxwave parallaxwave-2">
-      <use xlink:href="#onda" x="0" y="4" fill="#FF9F68" />
-    </g>
-  </svg>
-</div>
+      <g class="parallaxwave parallaxwave-1">
+         <use xlink:href="#onda" x="48" y="3" fill="#C3E18E" />
+      </g>
+      <g class="parallaxwave parallaxwave-2">
+         <use xlink:href="#onda" x="48" y="7" fill="#FF9F68" />
+      </g>
+   </svg>
+   </div>
 
 <main class="container">
 
