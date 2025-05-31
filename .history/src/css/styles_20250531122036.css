@@ -171,7 +171,7 @@ a:focus {
   height: 2rem;
   display: block;
 }
-.waveGroup {
+.parallaxwave-1 {
   animation: move-forever-1 10s linear infinite;
   transform: translate3d(0, 0, 0);
   will-change: transform;

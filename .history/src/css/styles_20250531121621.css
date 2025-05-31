@@ -159,19 +159,23 @@ a:focus {
 
 /***************************** SVG Divider *****************************/
 .wavebox {
-  position: relative;
-  width: 100vw;
-  overflow: hidden;
+  width: 100%;         /* just full container width */
   height: 2rem;
-  line-height: 0;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  left: 0;
+  right: 0;
 }
 
 .wave {
-  width: 100vw;
+  width: 100%;
   height: 2rem;
   display: block;
+  line-height: 0;
 }
-.waveGroup {
+
+.parallaxwave-1 {
   animation: move-forever-1 10s linear infinite;
   transform: translate3d(0, 0, 0);
   will-change: transform;

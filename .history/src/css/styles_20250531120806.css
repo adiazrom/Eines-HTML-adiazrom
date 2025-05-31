@@ -111,16 +111,15 @@ a:focus {
 
 /**************************** Header *****************************/
 .header-container {
-  width: 100vw;        /* full viewport width */
-  padding: 1rem 2rem;  /* horizontal padding to center content */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-height: 100px;
-  position: relative;
-  overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    min-height: 100px;
+
 }
 
 .header-logo img {
@@ -158,34 +157,56 @@ a:focus {
 }
 
 /***************************** SVG Divider *****************************/
-.wavebox {
-  position: relative;
-  width: 100vw;
-  overflow: hidden;
+.wavebox,
+.wave {
   height: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
   line-height: 0;
 }
 
 .wave {
-  width: 100vw;
-  height: 2rem;
+  width: 100%;
   display: block;
+  block-size: 2rem;
 }
-.waveGroup {
-  animation: move-forever-1 10s linear infinite;
+
+.wavebox {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+.parallaxwave use {
   transform: translate3d(0, 0, 0);
   will-change: transform;
 }
 
-@keyframes move-forever-1 {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-1440px, 0, 0);
-  }
+.parallaxwave-1 use {
+  animation: move-forever-1 5s cubic-bezier(.55,.5,.45,.5) infinite;
+  animation-delay: -2s;
 }
 
+.parallaxwave-2 use {
+  animation: move-forever-2 8s cubic-bezier(.55,.5,.45,.5) infinite;
+  animation-delay: -3s;
+}
+
+@keyframes move-forever-1 {
+  0%   { transform: translate3d(-88px, 0, 0); }
+  50%  { transform: translate3d(-44px, 0, 0); }
+  100% { transform: translate3d(0px, 0, 0); }
+}
+
+@keyframes move-forever-2 {
+  0%   { transform: translate3d(-88px, 0, 0); }
+  50%  { transform: translate3d(-44px, 0, 0); }
+  100% { transform: translate3d(0px, 0, 0); }
+}
 
   
 

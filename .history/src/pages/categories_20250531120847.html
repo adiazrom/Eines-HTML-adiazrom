@@ -17,35 +17,42 @@
   
 <body>
 
- <header class="header-container">
-  <div class="header-logo">
-    <figure>
-      <img src="../img-opt/logo-343.png" alt="Logotipo de Kitchenette" width="343" height="82" />
-    </figure>
-  </div>
-
-  <div class="top-nav">
-    <nav>
-      <ul id="nav-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./categories.html">Categories</a></li>
-        <li><a href="./links.html">Links</a></li>
-      </ul>
-    </nav>
-  </div>
-
+     <header class="header-container">
+      <div class="header-logo">
+          <figure>
+            <img 
+               src="../img-opt/logo-343.png" 
+               srcset="../img-opt/logo-343.png 343w"
+               sizes="343px"
+               width="343" 
+               height="82" 
+               alt="Logotipo de Kitchenette">
+            </figure>
+      </div>
+  
+      <div class="top-nav">
+        <nav>
+            <ul id="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./links.html">Links</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
 <div class="wavebox">
   <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
     <defs>
-      <path id="wavePath" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z" />
+      <path id="onda" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
     </defs>
-    <g class="waveGroup" >
-      <use xlink:href="#wavePath" x="0" y="0" fill="#C3E18E" />
-      <use xlink:href="#wavePath" x="1440" y="0" fill="#C3E18E" />
+    <g class="parallaxwave parallaxwave-1">
+      <use xlink:href="#onda" x="0" y="0" fill="#C3E18E" />
+    </g>
+    <g class="parallaxwave parallaxwave-2">
+      <use xlink:href="#onda" x="0" y="4" fill="#FF9F68" />
     </g>
   </svg>
 </div>
-</header>
 
 <main class="container">
 

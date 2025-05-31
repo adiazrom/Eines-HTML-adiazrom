@@ -34,17 +34,16 @@
     </nav>
   </div>
 
-<div class="wavebox">
-  <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <defs>
-      <path id="wavePath" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z" />
-    </defs>
-    <g class="waveGroup" >
-      <use xlink:href="#wavePath" x="0" y="0" fill="#C3E18E" />
-      <use xlink:href="#wavePath" x="1440" y="0" fill="#C3E18E" />
-    </g>
-  </svg>
-</div>
+  <div class="wavebox">
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <defs>
+        <path id="onda" d="M0,160 C480,320 960,0 1440,160 L1440,320 L0,320 Z"></path>
+      </defs>
+      <g class="parallaxwave parallaxwave-1">
+        <use xlink:href="#onda" x="0" y="0" fill="#C3E18E" />
+      </g>
+    </svg>
+  </div>
 </header>
 
 <main class="container">

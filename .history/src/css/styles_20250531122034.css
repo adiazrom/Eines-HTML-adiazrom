@@ -159,11 +159,9 @@ a:focus {
 
 /***************************** SVG Divider *****************************/
 .wavebox {
-  position: relative;
   width: 100vw;
-  overflow: hidden;
   height: 2rem;
-  line-height: 0;
+  overflow: hidden;
 }
 
 .wave {
@@ -171,20 +169,18 @@ a:focus {
   height: 2rem;
   display: block;
 }
+
 .waveGroup {
-  animation: move-forever-1 10s linear infinite;
-  transform: translate3d(0, 0, 0);
-  will-change: transform;
+  animation: slideLeft 10s linear infinite;
 }
 
-@keyframes move-forever-1 {
-  0% {
-    transform: translate3d(0, 0, 0);
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
   }
-  100% {
-    transform: translate3d(-1440px, 0, 0);
+  to {
+    transform: translateX(-1440px); /* slide left by width of one wave */
   }
-}
 
 
   
